@@ -238,7 +238,7 @@ const Home = () => {
             {[
               { title: "Founders & entrepreneurs", desc: "You're building something that matters, and you don't want to burn out doing it. We get clear on the vision, the offer, and the version of you that gets to lead it." },
               { title: "Brand & marketing leaders", desc: "You can run the playbook in your sleep. What's missing is the soul, the story, the point of difference, the magic that makes your brand feel like a place people want to belong to." },
-              { title: "Teams in transition", desc: "Growth, restructuring, a new chapter. I work with leadership teams to rebuild trust, sharpen voice, and turn a group of high performers back into a Wolfpack." }
+              { title: "Teams in transition", desc: "Growth, restructuring, a new chapter. I work with leadership teams to rebuild trust, sharpen voice, and turn a group of high performers back into a wolffpack." }
             ].map((item, i) => (
               <motion.div
                 key={i}
@@ -292,8 +292,8 @@ const Home = () => {
                 className="bg-white p-10 md:p-12 border border-navy/10 rounded-[2.5rem] flex flex-col group hover:shadow-xl transition-all duration-700"
               >
                 <h3 className="text-3xl font-serif mb-6 text-navy group-hover:text-terracotta transition-colors">{svc.title}</h3>
-                <p className="text-sage mb-10 flex-grow text-lg italic">{svc.desc}</p>
-                <ul className="text-sm space-y-4 mb-10 text-sage/80 border-t border-navy/10 pt-8">
+                <p className="text-sage mb-4 text-lg italic">{svc.desc}</p>
+                <ul className="text-sm space-y-4 mb-10 text-sage/80 border-t border-navy/10 pt-6">
                   {svc.items.map((item, j) => (
                     <li key={j} className="flex items-center">
                       <span className="w-1.5 h-1.5 rounded-full bg-terracotta/60 mr-3" />
@@ -301,7 +301,7 @@ const Home = () => {
                     </li>
                   ))}
                 </ul>
-                <Link to="/contact" className="terracotta-button w-full text-center py-4 text-lg">{svc.cta}</Link>
+                <Link to="/contact" className="terracotta-button w-full text-center py-4 text-lg mt-auto">{svc.cta}</Link>
               </motion.div>
             ))}
           </div>
@@ -400,7 +400,7 @@ const Home = () => {
         className="section-padding bg-terracotta overflow-hidden" style={{ position: 'relative', zIndex: 1 }}>
         <div className="max-container max-w-2xl text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: false }}>
-            <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white">Join the Wolfpack.</h2>
+            <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white">Join the wolffpack.</h2>
             <p className="text-lg text-white/80 mb-12 italic">
               Occasional notes on building brave brands, leading with breathing room, and finding the small rituals that hold it all together. No pitch, no cadence pressure — just the good stuff.
             </p>

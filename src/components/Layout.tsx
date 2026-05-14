@@ -133,9 +133,9 @@ const Footer = () => {
             <h4 className="text-[10px] uppercase tracking-[0.3em] text-terracotta font-bold">Navigation</h4>
             <div className="flex flex-col space-y-4 font-serif text-xl italic text-white/80">
               <Link to="/" className="hover:text-terracotta transition-colors">Home</Link>
-              <Link to="/about" className="hover:text-terracotta transition-colors">About My Story</Link>
-              <Link to="/services" className="hover:text-terracotta transition-colors">Ways We Work</Link>
-              <Link to="/contact" className="hover:text-terracotta transition-colors">Get in Touch</Link>
+              <Link to="/about" className="hover:text-terracotta transition-colors">About</Link>
+              <Link to="/services" className="hover:text-terracotta transition-colors">Services</Link>
+              <Link to="/contact" className="hover:text-terracotta transition-colors">Contact</Link>
             </div>
           </div>
 
