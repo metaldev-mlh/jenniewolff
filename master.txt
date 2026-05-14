@@ -1,0 +1,456 @@
+Jennie Wolff
+Holistic Brand & Leadership Coach
+Website Wireframes & Content
+Home  ·  About  ·  Services  ·  Contact
+Prepared by The MLH Agency
+How to read this document
+Each of the four pages below is laid out in two parts:
+Wireframe — a labeled, top-to-bottom blocking of every section so you can see what goes where on the page.
+Content — the actual copy and component-level notes for each section, written in Jennie’s voice and pulled from the brand storytelling session.
+Voice & feel: warm, authentic, grounded, intentional, with room to breathe. Negative space, color blocking (cream canvas with terracotta, sage, and blush accents), and real-life photography in Jennie’s space.
+CTA strategy: per the call, primary CTAs are different by service type. Each service has its own action (intake form, monthly inquiry, or brand consult). The Contact page is the catch-all for general inquiries.
+Note on placeholders: copy marked [BRACKETED] is awaiting confirmation, a quote, a stat, or a final asset.
+1. Home Page
+Goal: introduce Jennie as a holistic brand and leadership coach, surface the three core ways to work with her, and give the right next step for each kind of visitor.
+Wireframe
+
+01  ·  TOP NAV
+Logo (JW mark)   |   Home   About   Services   Contact   |   [Request a Session]
+Sticky on scroll. Cream background, terracotta CTA pill.
+
+
+02  ·  HERO
+Headline + sub-headline + primary CTA + portrait of Jennie in her space
+Two-column on desktop: copy left, portrait right. Generous negative space.
+
+
+03  ·  INTRO
+Short, italic paragraph that grounds the visitor
+Full-width terracotta-tinted band. Acts as the brand’s exhale.
+
+
+04  ·  WHO I WORK WITH
+Founders & entrepreneurs  |  Brand & marketing leaders  |  Teams in transition
+Icon + 1 sentence each.
+
+
+05  ·  THREE WAYS TO WORK TOGETHER (SERVICES SNAPSHOT)
+Three cards — each with its own CTA
+Cards link to Services page anchor + service-specific action.
+1:1 COACHING CONTAINER
+3-month coaching + consulting + ritual
+[Request a Clarity Session]
+TEAM & LEADERSHIP
+Monthly leadership sessions for teams
+[Inquire for Your Team]
+BRAND STRATEGY
+Foundation, story, competitive advantage
+[Book a Brand Consult]
+
+
+06  ·  THE APPROACH
+Heal the system, not the symptom. Drop In  →  Go Deep  →  Take One Small Step
+Sage-tinted band, white text. Sets Jennie apart from typical coaches.
+
+
+07  ·  FEATURED CLIENT STORY / QUOTE
+Pulled testimonial + client name + small portrait or organization mark
+Use the Angela Levinson quote or another, once collected.
+
+
+08  ·  ABOUT
+Photo of Jennie + 2-line bio + [Read My Story →]
+Hands off to the About page.
+
+
+09  ·  WOLFPACK NEWSLETTER
+Soft email capture: “Join the Wolfpack”
+Single email field. No popup. Optional.
+
+
+10  ·  FOOTER
+JW mark   |   Nav links   |   Joyous Wolf Consulting LLC   |   Instagram, LinkedIn   |   jennie@thejenniewolff.com
+Cream background, sage divider line above.
+
+
+
+Content
+Top Nav
+Logo: JW mark
+Nav items: Home  ·  About  ·  Services  ·  Contact
+Primary nav CTA (terracotta pill button): Request a Session
+Hero
+Holistic Brand & Leadership Coach
+Strategy through soul. Leadership through methodology.
+SUB-HEADLINE
+I help founders, leaders, and teams grow brands and careers they actually want to live inside — by blending coaching, consulting, and ritual.
+PRIMARY CTA
+Request a Clarity Session  →
+SECONDARY CTA
+See how we work together
+VISUAL
+Portrait of Jennie in her space — natural light, plants, grounded. Soft cream and terracotta tones.
+"Before we dig into the strategy, the launch plan, and the team dynamic, we drop in. Phones down. One breath. Then we begin. That small shift is where everything else gets easier."
+Who I Work With
+Founders & entrepreneurs
+You’re building something that matters, and you don’t want to burn out doing it. We get clear on the vision, the offer, and the version of you that gets to lead it.
+Brand & marketing leaders
+You can run the playbook in your sleep. What’s missing is the soul, the story, the point of difference, the magic that makes your brand feel like a place people want to belong to.
+Teams in transition
+Growth, restructuring, a new chapter. I work with leadership teams to rebuild trust, sharpen voice, and turn a group of high performers back into a Wolfpack.
+Three Ways to Work Together
+1:1 Coaching Containers
+Three months of coaching, consulting, and ritual designed around your one big build.
+75-minute sessions on a cadence that fits your life
+Strategic advising + somatic, mindfulness-based coaching
+A closing ritual to mark what you’ve built
+CTA: Request a Clarity Session →
+
+Team & Leadership Sessions
+Monthly sessions that develop your leaders and your culture in the same room.
+Group leadership sessions and 1:1 coaching for key team members
+Practical tools for boundaries, communication, and confidence
+Built to fit a fast-moving operating company
+CTA: Inquire for Your Team →
+
+Brand Strategy & Storytelling
+Brand foundation work for emerging companies that need to find their point of difference.
+Story, positioning, and brand foundation
+Experience design for launches, photo shoots, and signature events
+Drawn from a decade leading high-growth brands
+CTA: Book a Brand Consult →
+The Approach
+My approach: heal the system, not the symptom.
+Most coaches give you tactics. Most consultants give you a deck. I do both. We figure out what’s actually in the way (often it’s not what you think), then we build the strategy around the human leading it. You can build something great and lose yourself in the problem. And then what was the point?
+
+1. Drop In: We start with breath, presence, and what’s alive for you today.
+2. Go Deep: We work the real issue — brand, business, or self — with the right tool for the moment.
+3. Take One Small Step: You leave with one action. Small steps lead to big change.
+Featured Client Story / Quote
+"TEST CONTENT TO BE PROVIDED BY JENNIE”
+— Mickey Mouse, Position, Disney
+
+About
+Twenty years of brand-building. Two kids. One big lesson: the best brands are built by people who are taking care of themselves first.
+Read My Story  →
+Wolffpack Newsletter
+HEADING
+Join the Wolfpack.
+SUB
+Occasional notes on building brave brands, leading with breathing room, and finding the small rituals that hold it all together. No pitch, no cadence pressure — just the good stuff.
+FORM
+[Email field]  +  [Subscribe button]
+Footer
+Left: JW mark + tagline (“Holistic brand & leadership coaching.”)
+Middle: Nav links + Services anchors
+Right: Contact (jennie@thejenniewolff.com) + Instagram + LinkedIn
+Bottom row: © [year] Joyous Wolf Consulting LLC  ·  Privacy
+2. About Page
+Goal: tell Jennie’s story honestly, surface her values and credentials, and explain how she actually works with people — so a prospect can feel her energy before they ever book a call.
+Wireframe
+
+01  ·  PAGE HEADER
+“About Jennie”  +  one-line statement of identity
+Cream background, large serif heading.
+
+
+02  ·  BIO
+Two columns: long-form bio left, full-bleed editorial portrait right
+Scrolls into chapter blocks: Origin, Sola Years, The Pivot, Now.
+
+
+03  ·  PULL QUOTE
+Large italic quote from Jennie
+Used to break up the bio.
+
+
+04  ·  VALUES
+Five chips in a row: Connection  ·  Joy  ·  Wellbeing  ·  Authenticity  ·  Community
+Each clickable to expand a one-sentence definition.
+
+
+05  ·  MY PROCESS
+Numbered, four-step visual flow
+Drop In  →  Diagnose the Whole System  →  Coach + Consult  →  Close With Ritual
+
+
+06  ·  CERTIFICATIONS & CREDENTIALS
+Logo grid + one-line note for each credential
+ICM, Sola/Radiance Holdings, agency years, Pepsi Center experience.
+
+
+07  ·  OFF THE CLOCK
+Photo strip + short paragraph about life outside work (kids, music, rituals)
+Humanizes Jennie. Optional but recommended.
+
+
+08  ·  CTA BAND
+“If any of this resonates, let’s talk.”  +  [Request a Session]
+Terracotta band. Routes to Contact page.
+
+
+
+Content
+About Jennie
+Storyteller, magic-maker, and the coach you call when you’re building something brave and don’t want to lose yourself doing it.
+Bio
+I started in big rooms. Five years running 50+ events a month across the Pepsi Center, Dick's Sporting Goods Park, and the Paramount Theater taught me how to hold a crowd and make a logistics machine feel like an experience. From there I moved to a marketing agency, learned to braid experiential, digital, and brand into one voice, and landed at Sola Salon Studios as their first in-house marketing hire.
+I spent nearly a decade at Sola Salon Studios building the brand, leading the team, and eventually serving as CMO of the parent company. After that chapter, I built a small fractional CMO practice, took real time off when my daughter was born, and trained as a coach at the Institute for Coaching Mastery (certified 2024).
+Today I run a small, intentional practice as a holistic brand and leadership coach. Part strategist, part guide, part ritual-keeper. Mom of two. Still learning.
+Values
+My five North Stars. They shape how I show up — with my clients, my kids, and myself.
+
+Connection: The work doesn’t move until two humans actually drop in.
+Joy: Joy is a strategy. It’s also why my LLC is named Joyous Wolf.
+Wellbeing: You can’t lead what you can’t sustain. Boundaries first.
+Authenticity: The version of you that’s already here is the one we’re building from.
+Community: Success unshared is failure. Every tool I’ve learned belongs in someone else’s hands, too.
+My Process
+My process is intentionally part-coach, part-consultant, part-ritual-keeper. Most of my clients get all three in the same session.
+1. Drop In
+Every session starts with a moment of presence. Sometimes a breath, sometimes a guided meditation, sometimes just a deep exhale and a question. We don’t rush. My sessions are 75 minutes on purpose.
+2. Diagnose the Whole System
+Whatever you bring: a hiring decision, a launch, a stuck moment, a story you can’t shake — we look at it the way a holistic practitioner looks at a body. The symptom is real, but rarely the root. We find the root.
+3. Coach + Consult
+This is where my background as a CMO and my training as a coach work together. Sometimes the right tool is a somatic practice. Sometimes it’s a positioning framework. Sometimes it’s, “your pricing is wrong, here’s what I’d do.” I don’t pretend to only wear one hat.
+4. One Small Step
+Every session ends with a single action — sometimes as small as “start drinking water.” Small steps, repeated over a three-month container, are what create the shift.
+5. Close With Ritual
+Coaching containers end with an intentional, non-religious ritual ceremony — a way of marking what you built and what you’re leaving behind. It’s the part most clients tell me about months later.
+Certifications & Credentials
+Certified Coach: Institute for Coaching Mastery (ICM), 2024
+Somatic, mindfulness, and trauma-informed coaching tools. The framework underpins how I hold space for clients in 1:1 and team work.
+
+Former CMO: Sola Salon Studios & Radiance Holdings
+Nearly a decade leading brand, marketing, and experience for a category-defining franchise. Member of the executive team through a management-led buyout and a private-equity sale.
+
+Fractional CMO: multiple brands across wellness, beauty, and lifestyle
+Brand foundation, positioning, and launch strategy for emerging companies.
+
+Integrated Marketing: Denver-based marketing agency
+Experiential, digital, and brand strategy across national consumer brands.
+
+Special Events: Pepsi Center, Dick’s Sporting Goods Park, Paramount Theater
+50+ events a month across three venues. I learned events, when done right, become an experience.
+
+Off the Clock
+Mom to two. Wife. Recovering workaholic and insomniac. Live music will always pull me out of the house. I host small ritual gatherings with my girlfriends, drink martinis with intention, and practice what I preach about boundaries.
+
+If any of this resonates, let’s talk.
+Request a Session  →
+3. Services Page
+Goal: lay out every offer clearly, with who it’s for, what’s included, and the right next step — so the right people self-select in.
+Wireframe
+
+01  ·  PAGE HEADER + INTRO
+“Ways to Work Together”  +  short framing paragraph
+Sets up the holistic approach.
+
+
+02  ·  SERVICE ANCHOR NAV
+1:1 Coaching   ·   Team & Leadership   ·   Brand Strategy   ·   Ritual & Experience   ·   Advisory
+Sticky on scroll, jumps to each section.
+
+
+03  ·  SERVICE 1 — 1:1 COACHING CONTAINERS
+Two-column block: copy left, sample agenda / inclusions card right
+Service-specific CTA: [Request a Clarity Session]
+
+
+04  ·  SERVICE 2 — TEAM & LEADERSHIP SESSIONS
+Two-column block, color-blocked into blush band
+CTA: [Inquire for Your Team]
+
+
+05  ·  SERVICE 3 — BRAND STRATEGY & STORYTELLING
+Two-column block: copy + “what we build together” list
+CTA: [Book a Brand Consult]
+
+
+06  ·  SERVICE 4 — RITUAL & INTENTIONAL EXPERIENCES
+Editorial block with photo of a gathering
+CTA: [Design an Experience With Me]
+
+
+07  ·  SERVICE 5 — ADVISORY / FRACTIONAL BRAND LEADERSHIP
+Smaller block — by referral or selective engagement
+CTA: [Inquire About Advisory]
+
+
+08  ·  HOW WE BEGIN
+Three-step visual: Reach Out  →  Clarity Call  →  Custom Container
+Reassures that nothing is one-size-fits-all.
+
+
+09  ·  FAQ
+Accordion of 5–7 questions
+Pricing, length, format, virtual vs in-person, etc.
+
+
+10  ·  CLOSING CTA
+“Not sure which fits? Let’s find out together.”  +  [Request a Session]
+Routes to Contact.
+
+
+
+Content
+Ways to work together
+Every engagement I run is a custom container. Some clients show up with a brand to launch. Some show up with a team to lead. Some show up because they need to find themselves again before they can do either. The five offerings below are the doorways. We shape what happens inside together.
+1:1 Coaching Containers
+For: Founders, entrepreneurs, and high-achieving leaders who are building something brave and want a guide for the strategy and the human leading it.
+WHAT IT IS
+A three-month container of coaching, consulting, and ritual designed around your one big build. We meet on a cadence that fits your life, with text and email access between sessions for the moments that don’t wait.
+WHAT’S INCLUDED
+X 75-minute 1:1 sessions over three months
+A blend of somatic, mindfulness-based coaching and direct strategic advising
+Custom tools and frameworks pulled from my ICM training and 20 years of learning
+Async support between sessions: text, email, voice notes
+A closing ritual ceremony to mark what you’ve built
+INVESTMENT
+Starting at $[X,XXX] per container.
+CTA
+Request a Clarity Session  →
+Team & Leadership Sessions
+For: Founder-led companies and leadership teams who want to grow people and culture in the same room.
+WHAT IT IS
+A monthly engagement that develops your leaders as a group and supports key team members 1:1, so the whole gets stronger because each person is showing up stronger. Modeled on the work I led inside Sola for years.
+WHAT’S INCLUDED
+Monthly group leadership sessions (90–120 minutes)
+1:1 coaching containers for two to three identified leaders
+Practical tools for boundaries, communication, conflict, and confidence
+Quarterly culture check-ins with leadership
+Optional team rituals around off-sites, launches, or transitions
+INVESTMENT
+[Confirm] Custom monthly retainer based on team size and scope.
+CTA
+Inquire for Your Team  →
+Brand Strategy & Storytelling
+For: Emerging brands and founders who can’t articulate what makes them different, and need a partner who can find it and stand behind it.
+WHAT IT IS
+Brand foundation work, drawn from a decade leading brand at Sola and years as a fractional CMO. We build the story, the positioning, the point of difference and the heart of the brand, before anyone gets to lead-gen and funnels.
+WHAT WE BUILD TOGETHER
+Brand foundation: story, values, voice, and point of difference
+Audience and positioning
+Messaging architecture and proof points
+Experience design for launches, photo and video shoots, and signature events
+Talk-trigger moments: the magic that makes people want to share
+FORMAT
+Project-based engagement, typically four to eight weeks. Includes a kickoff workshop, working sessions, and a final brand foundation deliverable your team can build from.
+INVESTMENT
+[Confirm] Project-based, scoped on the kickoff call.
+CTA
+Book a Brand Consult  →
+Ritual & Intentional Experiences
+For: Founders, teams, and groups of friends who want a gathering that actually moves something — not another panel or happy hour.
+WHAT IT IS
+Curated, non-religious ritual gatherings, from the closing ceremony of a coaching container to a small private event for your team or community. Create space for yourself and others to sit with eachother and share a transformational experience. I’ve been hosting these for years (sometimes for clients, sometimes for my girlfriends), and they tend to leave people in awe and in tears in the best possible way.
+EXAMPLES
+Closing rituals to mark the end of a coaching container
+Intimate gatherings around a new moon, a launch, or a transition
+Team rituals around off-sites, anniversaries, or hard chapters
+Brand experiences and photo/video shoots that double as ceremonies
+INVESTMENT
+[Confirm] Custom — priced based on size, format, and depth.
+CTA
+Design an Experience With Me  →
+Advisory / Fractional Brand Leadership
+For: A small number of select brands that need senior brand leadership in the room without a full-time hire.
+WHAT IT IS
+A selective, by-referral advisory relationship. Typically for founder-led companies in transition, scaling, or preparing for a sale. I sit beside leadership as a strategic partner and brand voice.
+FORMAT
+Limited capacity. By introduction or referral only.
+CTA
+Inquire About Advisory  →
+How We Begin
+Every engagement starts the same way:  with a real conversation.
+
+1. Reach Out
+Send a note through the contact page or email me directly. Tell me what you’re building and where you feel stuck.
+2. Clarity Call
+If we’re a fit, I’ll invite you to a complimentary clarity session. Not a sales call — a real one.
+3. Your Container
+If we both feel the alignment, I’ll send a proposal scoped to what you actually need. We start when you’re ready.
+FAQ
+Are sessions virtual or in-person?
+Both. Most 1:1 work happens over Zoom. Team work, rituals, and brand workshops are designed for in-person whenever possible.
+
+Why are your sessions 75 minutes?
+Because 60 feels rushed. Real shifts need a few minutes of “how are you” at the start and a few minutes to land at the end.
+
+Are you a coach or a consultant?
+Both, depending on what the moment needs. I’m ICM-certified as a coach and spent two decades as a brand and marketing leader. Most clients get both inside the same session.
+
+Do you take on every client?
+No. I work with a small number of people at a time so I can stay in the work with each of them. The clarity call is how we both decide if it’s a yes.
+
+What does “ritual” actually mean here?
+Intentional, non-religious practices. Breath, journaling, ceremony, gathering. Designed to mark a moment so the work actually integrates.
+
+Where are you based?
+Denver, Colorado. I work with clients across the U.S. and travel for select team and brand engagements.
+
+Not sure which fits? Let’s find out together.
+Request a Session  →
+4. Contact Page
+Goal: a calm, low-friction way for the right people to reach Jennie. Per your call: simple contact form + direct email — not direct booking. Vetting happens by reply.
+Wireframe
+
+01  ·  PAGE HEADER
+“Let’s talk.”  +  short, warm intro paragraph
+
+
+02  ·  TWO-COLUMN: FORM  |  DIRECT CONTACT
+Form on left, direct email + Calendly + social on right
+On mobile, form stacks above contact card.
+CONTACT FORM
+Name  ·  Email  ·  Working on  ·  Message  ·  [Send]
+DIRECT
+jennie@thejenniewolff.com  ·  Instagram  ·  LinkedIn
+Optional 30-min discovery link
+
+
+03  ·  WHAT HAPPENS NEXT
+Three-step strip: You write → I read every note personally → If we’re a fit, you’ll hear from me within 2 business days
+
+
+04  ·  FOOTER
+Standard site footer
+Same as Home.
+
+
+
+Content
+Let’s talk.
+Whether you’re building a brand, leading a team, or just trying to figure out the next right step — I’d love to hear what you’re working on. Share a few things below and I’ll be in touch personally.
+Contact Form
+
+FORM FIELDS
+Your name
+Email
+How did you find me? (optional dropdown: Referral, Instagram, LinkedIn, Past colleague, Other)
+What are you working on, and what feels stuck? (long text)
+Which of these sounds most like what you need? (single-select — 1:1 coaching, Team & leadership, Brand strategy, Ritual & experience, Not sure yet)
+Anything else you want me to know? (optional)
+
+SUBMIT BUTTON
+Send  →
+FORM CONFIRMATION MESSAGE
+Thank you. I read every note personally and will get back to you within two business days. — Jennie
+Direct Contact Card
+Email
+jennie@thejenniewolff.com  [confirm preferred address]
+
+Social
+Instagram — @[handle]
+LinkedIn — linkedin.com/in/[handle]
+
+Office
+Denver, CO  ·  Working with clients across the U.S.
+ What Happens Next
+1. You write.
+Send a real note. The more honest, the better.
+2. I read every one personally.
+No assistant. No autoresponder dressed up as a person.
+3. We meet, if it’s a fit.
+If your note and my practice are aligned, I’ll invite you to a complimentary clarity session within two business days.
+Footer
