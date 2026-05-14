@@ -1,20 +1,22 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Jennie Wolff — Website
 
-# Run and deploy your AI Studio app
+Holistic brand and leadership coaching website for Jennie Wolff / Joyous Wolf Consulting LLC.
 
-This contains everything you need to run your app locally.
+## Tech Stack
 
-View your app in AI Studio: https://ai.studio/apps/73b267e2-bed2-48bd-9313-2f41bcf8785b
+- React + TypeScript
+- Tailwind CSS v4
+- Framer Motion
+- React Router
+- Vite
 
-## Run Locally
+## Getting Started
 
-**Prerequisites:**  Node.js
+```bash
+npm install
+npm run dev
+```
 
+## Deployment
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Connected to Vercel via GitHub. Every push to `main` deploys automatically.
