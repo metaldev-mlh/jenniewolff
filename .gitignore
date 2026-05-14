@@ -7,3 +7,11 @@ coverage/
 .env*
 !.env.example
 .vercel
+
+# Draft & reference files
+*.html
+!index.html
+master.txt
+public/jenna.txt
+metadata.json
+backup/
