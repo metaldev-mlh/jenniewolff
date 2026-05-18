@@ -146,8 +146,8 @@ const Footer = () => {
                 jennie@thejenniewolff.com
               </a>
               <div className="flex space-x-6">
-                <a href="#" className="w-12 h-12 rounded-full border border-white/20 text-white/70 flex items-center justify-center hover:bg-terracotta hover:text-white transition-all duration-500"><Instagram size={20} /></a>
-                <a href="#" className="w-12 h-12 rounded-full border border-white/20 text-white/70 flex items-center justify-center hover:bg-terracotta hover:text-white transition-all duration-500"><Linkedin size={20} /></a>
+                <a href="https://www.instagram.com/jenniethewolff/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-white/20 text-white/70 flex items-center justify-center hover:bg-terracotta hover:text-white transition-all duration-500"><Instagram size={20} /></a>
+                <a href="https://www.linkedin.com/in/jenniewolff/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full border border-white/20 text-white/70 flex items-center justify-center hover:bg-terracotta hover:text-white transition-all duration-500"><Linkedin size={20} /></a>
               </div>
             </div>
           </div>

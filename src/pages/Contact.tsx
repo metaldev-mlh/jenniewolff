@@ -173,8 +173,8 @@ const Contact = () => {
                  <div>
                    <p className="text-xs text-sage uppercase tracking-widest mb-4">Social</p>
                    <div className="flex space-x-4">
-                     <a href="#" className="w-10 h-10 rounded-full border border-sage/20 flex items-center justify-center hover:bg-terracotta hover:text-white hover:border-terracotta transition-all"><Instagram size={18} /></a>
-                     <a href="#" className="w-10 h-10 rounded-full border border-sage/20 flex items-center justify-center hover:bg-terracotta hover:text-white hover:border-terracotta transition-all"><Linkedin size={18} /></a>
+                     <a href="https://www.instagram.com/jenniethewolff/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-sage/20 flex items-center justify-center hover:bg-terracotta hover:text-white hover:border-terracotta transition-all"><Instagram size={18} /></a>
+                     <a href="https://www.linkedin.com/in/jenniewolff/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-sage/20 flex items-center justify-center hover:bg-terracotta hover:text-white hover:border-terracotta transition-all"><Linkedin size={18} /></a>
                    </div>
                  </div>
                </div>
