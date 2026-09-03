@@ -1,0 +1,36 @@
+Aku sekarang punya pemahaman lengkap tentang seluruh situs. Ini rencana redesign-nya.
+
+## Rencana Redesign
+
+**Tujuan klien:**
+- Lebih sederhana, intentional, spacious
+- High-ticket feel (bukan lead gen)
+- 15-20% lebih hangat, personal, "menemui orangnya" bukan hire konsultan
+- Palet lebih lembut — navy & terracotta terasa berat
+- Kurang struktur linear, lebih breathing room, subtle movement, moments of delight (stars/moons)
+- Ritual sebagai filosofi bukan service
+- CTA sebagai curated invitation, bukan sales engine
+- Imagery personal (keluarga, cara dia habiskan waktu) bukan cuma foto speaking
+
+**Arah desain baru (inspirasi Katie Sandler):**
+- Palet lebih hangat & lembut: ganti navy (`#5B7A93`) yang berat → biru lembut hangat, terracotta jadi accent lebih halus, naikkan blush/gold, tambah warna muda
+- Lebih banyak whitespace, typography serif yang elegan (sudah ada Playfair)
+- Elemen celestial (stars, moons) dibuat lebih halus & tersebar — sudah ada komponennya
+- Struktur halaman dirapikan & dikurangi kepadatan konten
+
+Karena ini perubahan besar yang menyentuh semua file, dan copy serta struktur halaman perlu dipertahankan informasinya (Request a Clarity Session, Calendly, email, dll.), aku akan eksekusi secara bertahap:
+
+1. **`index.css`** — palet warna baru yang lebih lembut/hangat + tweak typography
+2. **`Layout.tsx`** — navbar & footer sesuai palet baru
+3. **Semua halaman** — update warna & spacing mengikuti sistem desain baru, tapi tetap pertahankan konten & fungsionalitas (routing, form, FAQ, dll.)
+
+Mari mulai dengan palet warna. Aku pilih palet yang lebih hangat, ringan, spacious — mempertahankan karakter personal tapi menghilangkan bobot konsultan:
+
+- `cream` tetap tapi sedikit lebih hangat
+- `terracotta` → versi lebih lembut (rose/dust), `#C67D5F` → tetap sebagai brand accent tapi dipakai lebih hemat
+- `navy` `#5B7A93` (dingin, berat) → ganti jadi hangat lembut `#8FB0B8` / biru-debu hangat
+- `sage` → lebih terang lembut
+- Tambah `rose` / `sand` sebagai warna ruang bernapas
+
+Mari saya tulis `index.css` baru dengan sistem desain yang lebih hangat & spacious.
+

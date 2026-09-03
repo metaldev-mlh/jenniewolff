@@ -2,6 +2,16 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Instagram, Linkedin, Send } from 'lucide-react';
 
+const container = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.12 } },
+};
+
+const fadeUp = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1] as const } },
+};
+
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
@@ -15,7 +25,6 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate submission
     setTimeout(() => {
       setSubmitted(true);
     }, 1000);
@@ -24,7 +33,7 @@ const Contact = () => {
   if (submitted) {
     return (
       <div className="min-h-[80vh] flex items-center justify-center bg-cream px-6">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           className="text-center max-w-xl"
@@ -39,28 +48,48 @@ const Contact = () => {
   }
 
   return (
-    <div className="bg-cream">
-      {/* 01 HEADER */}
-      <header className="section-padding pt-32 pb-16">
-        <div className="max-container">
-          <h1 className="text-5xl md:text-8xl font-serif mb-8 text-charcoal leading-[0.9]">Let’s talk.</h1>
-          <p className="text-xl md:text-2xl text-sage max-w-3xl leading-relaxed">
-            Whether you’re building a brand, leading a team, or just trying to figure out the next right step — I’d love to hear what you’re working on. Share a few things below and I’ll be in touch personally.
-          </p>
+    <div className="bg-cream overflow-hidden">
+      <header className="section-padding pt-32 pb-16 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="/jennie-family-forest.jpg" alt="" className="w-full h-full object-cover object-center opacity-15" aria-hidden />
+          <div className="absolute inset-0 bg-gradient-to-b from-cream via-cream/70 to-cream" />
+        </div>
+        <div className="max-container relative">
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            className="text-5xl md:text-8xl font-serif mb-8 text-charcoal leading-[0.9]"
+          >
+            Let's <span className="italic text-terracotta">connect.</span>
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="text-xl md:text-2xl text-sage max-w-3xl leading-relaxed"
+          >
+            Whether you're navigating a transition, building something meaningful, or simply figuring out what's next, I'd love to hear your story. Share a few details below and I'll be in touch.
+          </motion.p>
         </div>
       </header>
 
       <section className="section-padding pt-0">
         <div className="max-container grid grid-cols-1 lg:grid-cols-12 gap-16">
-          {/* 02 FORM */}
-          <div className="lg:col-span-7 bg-white p-8 md:p-12 rounded-3xl border border-sage/10 shadow-sm">
+          <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+              className="lg:col-span-7 bg-white p-8 md:p-12 rounded-3xl border border-sage/10 shadow-sm"
+            >
             <form onSubmit={handleSubmit} className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-2">
                   <label className="text-xs uppercase tracking-widest text-sage font-bold">Your name</label>
-                  <input 
+                  <input
                     required
-                    type="text" 
+                    type="text"
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
                     className="w-full border-b border-sage/30 py-2 focus:outline-none focus:border-terracotta transition-colors text-charcoal bg-transparent"
@@ -68,9 +97,9 @@ const Contact = () => {
                 </div>
                 <div className="space-y-2">
                   <label className="text-xs uppercase tracking-widest text-sage font-bold">Email</label>
-                  <input 
+                  <input
                     required
-                    type="email" 
+                    type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
                     className="w-full border-b border-sage/30 py-2 focus:outline-none focus:border-terracotta transition-colors text-charcoal bg-transparent"
@@ -80,7 +109,7 @@ const Contact = () => {
 
               <div className="space-y-2">
                 <label className="text-xs uppercase tracking-widest text-sage font-bold">How did you find me?</label>
-                <select 
+                <select
                   className="w-full border-b border-sage/30 py-2 focus:outline-none focus:border-terracotta transition-colors text-charcoal bg-transparent"
                   value={formData.referral}
                   onChange={(e) => setFormData({...formData, referral: e.target.value})}
@@ -96,7 +125,7 @@ const Contact = () => {
 
               <div className="space-y-2">
                 <label className="text-xs uppercase tracking-widest text-sage font-bold">What are you working on, and what feels stuck?</label>
-                <textarea 
+                <textarea
                   required
                   rows={4}
                   value={formData.workingOn}
@@ -109,19 +138,18 @@ const Contact = () => {
                 <label className="text-xs uppercase tracking-widest text-sage font-bold block mb-2">Which of these sounds most like what you need?</label>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {[
-                    "1:1 coaching", 
-                    "Team & leadership", 
-                    "Brand strategy", 
-                    "Ritual & experience", 
+                    "1:1 coaching",
+                    "Team & leadership",
+                    "Consulting & advisory",
                     "Not sure yet"
                   ].map((type) => (
                     <label key={type} className="flex items-center space-x-3 cursor-pointer group">
-                      <input 
-                        type="radio" 
-                        name="needType" 
+                      <input
+                        type="radio"
+                        name="needType"
                         value={type}
                         onChange={(e) => setFormData({...formData, needType: e.target.value})}
-                        className="w-4 h-4 text-terracotta border-sage/30 focus:ring-terracotta" 
+                        className="w-4 h-4 text-terracotta border-sage/30 focus:ring-terracotta"
                       />
                       <span className="text-sage text-sm group-hover:text-terracotta transition-colors">{type}</span>
                     </label>
@@ -131,8 +159,8 @@ const Contact = () => {
 
               <div className="space-y-2">
                 <label className="text-xs uppercase tracking-widest text-sage font-bold">Anything else you want me to know?</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   value={formData.notes}
                   onChange={(e) => setFormData({...formData, notes: e.target.value})}
                   className="w-full border-b border-sage/30 py-2 focus:outline-none focus:border-terracotta transition-colors text-charcoal bg-transparent"
@@ -143,62 +171,94 @@ const Contact = () => {
                 Send <Send size={16} className="ml-2" />
               </button>
             </form>
-          </div>
+          </motion.div>
 
-          {/* 03 DIRECT CONTACT */}
           <div className="lg:col-span-5 space-y-12">
-             <div className="bg-blush/20 p-8 md:p-10 rounded-3xl border border-blush/40">
-               <h3 className="text-sm uppercase tracking-widest text-terracotta font-bold mb-6">Direct</h3>
-               <div className="space-y-6">
-                 <div>
-                   <p className="text-xs text-sage uppercase tracking-widest mb-1">Email</p>
-                   <a href="mailto:jennie@thejenniewolff.com" className="text-xl font-serif hover:text-terracotta transition-colors">jennie@thejenniewolff.com</a>
-                 </div>
-                 <div>
-                   <p className="text-xs text-sage uppercase tracking-widest mb-1">Office</p>
-                   <p className="text-xl font-serif">Denver, CO</p>
-                   <p className="text-sm text-sage">Working with clients across the U.S.</p>
-                 </div>
-                 <div>
-                   <p className="text-xs text-sage uppercase tracking-widest mb-3">Schedule a 30-min call</p>
-                   <a
-                     href="https://calendly.com/jenniethewolff/30-minute-connect"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                     className="inline-flex items-center bg-terracotta text-white px-6 py-3 rounded-full text-sm font-medium hover:opacity-90 transition-all"
-                   >
-                     Book on Calendly →
-                   </a>
-                 </div>
-                 <div>
-                   <p className="text-xs text-sage uppercase tracking-widest mb-4">Social</p>
-                   <div className="flex space-x-4">
-                     <a href="https://www.instagram.com/jenniethewolff/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-sage/20 flex items-center justify-center hover:bg-terracotta hover:text-white hover:border-terracotta transition-all"><Instagram size={18} /></a>
-                     <a href="https://www.linkedin.com/in/jenniewolff/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-sage/20 flex items-center justify-center hover:bg-terracotta hover:text-white hover:border-terracotta transition-all"><Linkedin size={18} /></a>
-                   </div>
-                 </div>
-               </div>
-             </div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1 }}
+              className="photo-frame rotate-[1.5deg] max-w-sm"
+            >
+              <div className="aspect-[4/5] overflow-hidden rounded-xl">
+                <img src="/jennie-ritual-studio.jpg" alt="Jennie Wolff" className="w-full h-full object-cover" />
+              </div>
+              <p className="font-serif italic text-charcoal text-center pt-4">
+                "I read every note personally."
+              </p>
+            </motion.div>
 
-             <div className="p-8">
-               <h3 className="text-sm uppercase tracking-widest text-sage font-bold mb-8">What Happens Next</h3>
-               <div className="space-y-8">
-                 {[
-                   { t: "1. You write.", d: "Send a real note. The more honest, the better." },
-                   { t: "2. I read every one personally.", d: "No assistant. No autoresponder dressed up as a person." },
-                   { t: "3. We meet, if it’s a fit.", d: "If your note and my practice are aligned, I’ll invite you to a clarity session within two business days." }
-                 ].map((step, i) => (
-                   <div key={i} className="flex space-x-6">
-                     <span className="text-terracotta font-serif text-lg">{i + 1}.</span>
-                     <div>
-                       <h4 className="font-serif mb-1">{step.t}</h4>
-                       <p className="text-sage text-sm leading-relaxed">{step.d}</p>
-                     </div>
-                   </div>
-                 ))}
-               </div>
-             </div>
-          </div>
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.9, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+              className="bg-blush/20 p-8 md:p-10 rounded-3xl border border-blush/40"
+            >
+              <h3 className="text-sm uppercase tracking-widest text-terracotta font-bold mb-6">Direct</h3>
+              <div className="space-y-6">
+                <div>
+                  <p className="text-xs text-sage uppercase tracking-widest mb-1">Email</p>
+                  <a href="mailto:jennie@thejenniewolff.com" className="text-xl font-serif hover:text-terracotta transition-colors">jennie@thejenniewolff.com</a>
+                </div>
+                <div>
+                  <p className="text-xs text-sage uppercase tracking-widest mb-1">Office</p>
+                  <p className="text-xl font-serif">Denver, CO</p>
+                  <p className="text-sm text-sage">Working with clients across the U.S.</p>
+                </div>
+                <div>
+                  <p className="text-xs text-sage uppercase tracking-widest mb-3">Schedule a 30-min call</p>
+                  <a
+                    href="https://calendly.com/jenniethewolff/30-minute-connect"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center bg-terracotta text-white px-6 py-3 rounded-full text-sm font-medium hover:opacity-90 transition-all"
+                  >
+                    Book on Calendly →
+                  </a>
+                </div>
+                <div>
+                  <p className="text-xs text-sage uppercase tracking-widest mb-4">Social</p>
+                  <div className="flex space-x-4">
+                    <a href="https://www.instagram.com/jenniethewolff/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-sage/20 flex items-center justify-center hover:bg-terracotta hover:text-white hover:border-terracotta transition-all"><Instagram size={18} /></a>
+                    <a href="https://www.linkedin.com/in/jenniewolff/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-sage/20 flex items-center justify-center hover:bg-terracotta hover:text-white hover:border-terracotta transition-all"><Linkedin size={18} /></a>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            </div>
+        </div>
+
+        {/* What Happens Next — full-width below the form */}
+        <div className="max-container mt-16">
+          <motion.div
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="bg-white rounded-3xl border border-sage/10 shadow-sm p-8 md:p-12"
+          >
+            <motion.h3 variants={fadeUp} className="text-sm uppercase tracking-widest text-sage font-bold mb-10">
+              What Happens Next
+            </motion.h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
+              {[
+                { t: "1. You write.", d: "Send a real note. The more honest, the better." },
+                { t: "2. I read every one personally.", d: "No assistant. No autoresponder dressed up as a person." },
+                { t: "3. We meet, if it's a fit.", d: "If your note and my practice are aligned, I'll invite you to a clarity session within two business days." }
+              ].map((step, i) => (
+                <motion.div key={i} variants={fadeUp} className="flex space-x-5">
+                  <span className="text-terracotta font-serif text-2xl leading-none">{i + 1}.</span>
+                  <div>
+                    <h4 className="font-serif text-lg mb-1">{step.t}</h4>
+                    <p className="text-sage text-sm leading-relaxed">{step.d}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </section>
     </div>

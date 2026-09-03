@@ -1,21 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Playfair Display", ui-serif, Georgia, serif;
 
-  --color-cream: #FCF9F4;
-  --color-terracotta: #BD644A;
-  --color-sage: #829383;
-  --color-blush: #EBD6CE;
-  --color-charcoal: #2D2D2D;
-  --color-navy: #1D4A76;
+  /* ── Softer, warmer palette (redesign) ─────────────────────────
+     Kept the brand soul (cream, terracotta, sage, blush) but
+     lightened every tone and introduced warmer, dustier neutrals
+     so the site feels more human, spacious, and less consultant.
+     The old "navy" (#5B7A93) felt heavy and institutional, so it's
+     replaced with a warm dusty blue that reads calm instead.      */
+  --color-cream: #FBF7F1;        /* warmer, slightly more buttery  */
+  --color-sand: #F4EDE3;         /* new: soft breathing-room tone  */
+  --color-linen: #F9F4EC;        /* new: warm off-white surface    */
+  --color-terracotta: #C9896B;   /* softened terracotta accent     */
+  --color-rose: #E8CDC0;         /* warm blush (lighter, softer)   */
+  --color-blush: #F3E0D6;        /* blush used on hover/cards      */
+  --color-sage: #93A095;         /* gentler sage green             */
+  --color-charcoal: #3D3833;     /* warm charcoal, not pure black  */
+  --color-steel: #7FA3AC;        /* new: warm dusty blue (was navy)*/
+  --color-gold: #C9A25A;
+
+  /* ── Bigger, more readable type scale ─────────────────────────
+     Bump the small/body sizes up so copy never feels tiny.       */
+  --text-xs: 0.8125rem;   /* 13px  (was 12px)  */
+  --text-sm: 0.9375rem;   /* 15px  (was 14px)  */
+  --text-base: 1.0625rem; /* 17px  (was 16px)  */
+  --text-lg: 1.25rem;     /* 20px  (was 18px)  */
+  --text-xl: 1.375rem;    /* 22px  (was 20px)  */
 }
 
 @layer base {
   body {
     @apply bg-cream text-charcoal font-sans;
+    font-size: 1.0625rem;   /* 17px base for comfortable reading */
+    line-height: 1.7;
   }
   h1, h2, h3, h4 {
     @apply font-serif;
@@ -26,11 +46,21 @@
 .markdown-body p { @apply mb-4 leading-relaxed; }
 
 .section-padding {
-  @apply py-16 md:py-24 px-6 md:px-12;
+  @apply py-24 md:py-36 px-6 md:px-12;
 }
 
 .max-container {
   @apply max-w-7xl mx-auto;
+}
+
+/* Curated, invitation-style primary button — softer, understated */
+.primary-button {
+  @apply bg-steel text-white px-8 py-4 rounded-full font-medium transition-all duration-500 hover:bg-charcoal hover:-translate-y-0.5 hover:shadow-lg;
+}
+
+/* Secondary / ghost button for quieter invitations */
+.ghost-button {
+  @apply inline-flex items-center border border-steel/40 text-charcoal px-8 py-4 rounded-full font-medium transition-all duration-500 hover:border-charcoal hover:bg-white/60;
 }
 
 .terracotta-button {
@@ -38,24 +68,22 @@
 }
 
 .sticky-nav {
-  @apply sticky top-0 z-50 bg-cream/90 backdrop-blur-md;
+  @apply sticky top-0 z-50 bg-cream/80 backdrop-blur-md;
 }
 
 .bg-navy {
-  background-color: var(--color-navy);
+  background-color: var(--color-steel);
 }
-
 .text-navy {
-  color: var(--color-navy);
+  color: var(--color-steel);
 }
-
 .border-navy {
-  border-color: var(--color-navy);
+  border-color: color-mix(in srgb, var(--color-steel) 30%, transparent);
 }
 
 @keyframes float {
   0% { transform: translateY(0px) rotate(0deg); }
-  50% { transform: translateY(-20px) rotate(2deg); }
+  50% { transform: translateY(-18px) rotate(2deg); }
   100% { transform: translateY(0px) rotate(0deg); }
 }
 
@@ -74,8 +102,8 @@
 
 @keyframes marqueeColor {
   0%   { color: rgba(255,255,255,1); }
-  25%  { color: rgba(235,214,206,1); }
-  50%  { color: rgba(252,249,244,0.6); }
+  25%  { color: rgba(236,213,203,1); }
+  50%  { color: rgba(253,249,241,0.6); }
   75%  { color: rgba(255,255,255,0.35); }
   100% { color: rgba(255,255,255,1); }
 }
@@ -96,20 +124,133 @@
   will-change: transform;
 }
 
+@keyframes twinkle {
+  0%, 100% { opacity: 0.25; transform: scale(0.85); }
+  50% { opacity: 0.9; transform: scale(1.05); }
+}
+
+.animate-twinkle {
+  animation: twinkle 4s ease-in-out infinite;
+  will-change: opacity, transform;
+}
+
 .perspective-image {
   perspective: 1000px;
 }
 
-/* Brand name animated color via filter — GPU-accelerated, no repaint */
+/* Brand name animated color via filter — GPU-accelerated, no repaint.
+   Now drifts between the warm blue and softened terracotta so the
+   brand name feels warm and alive rather than heavy. */
 @keyframes brandColorShift {
-  0%   { color: #1D4A76; }
-  40%  { color: #BD644A; }
-  60%  { color: #BD644A; }
-  100% { color: #1D4A76; }
+  0%   { color: #7FA3AC; }
+  40%  { color: #C9896B; }
+  60%  { color: #C9896B; }
+  100% { color: #7FA3AC; }
 }
 
 .brand-name-glow {
   animation: brandColorShift 5s ease-in-out infinite;
   will-change: color;
   transform: translateZ(0);
+}
+/* ─────────────────────────────────────────────────────────────
+   PHOTO-FORWARD / EDITORIAL additions (redesign v2)
+   ───────────────────────────────────────────────────────────── */
+
+/* Gradient text for editorial headlines */
+.text-gradient-sunset {
+  background: linear-gradient(100deg, var(--color-terracotta), #b0765a 40%, var(--color-steel));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Kicker row with flanking rules */
+.kicker {
+  @apply inline-flex items-center gap-3 text-sm uppercase tracking-[0.3em] font-semibold text-terracotta;
+}
+.kicker::before,
+.kicker::after {
+  content: "";
+  height: 1px;
+  width: 2.5rem;
+  background: color-mix(in srgb, var(--color-terracotta) 40%, transparent);
+}
+
+/* Slow parallax drift for background imagery */
+@keyframes drift {
+  0%   { transform: translate3d(0, 0, 0) scale(1.08); }
+  50%  { transform: translate3d(0, -2%, 0) scale(1.14); }
+  100% { transform: translate3d(0, 0, 0) scale(1.08); }
+}
+.animate-drift {
+  animation: drift 28s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Reveal-on-scroll fallback (used where motion handles the JS) */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-up.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Soft film-grain / texture overlay for hero imagery */
+.film-grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(61,56,51,0.12) 0.5px, transparent 0.5px);
+  background-size: 6px 6px;
+  mix-blend-mode: multiply;
+  opacity: 0.35;
+}
+
+/* Polaroid-style photo card */
+.photo-card {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 24px 60px -18px rgba(61,56,51,0.45);
+}
+.photo-frame {
+  border-radius: 1.25rem;
+  padding: 0.9rem 0.9rem 1.4rem;
+  background: var(--color-cream);
+  box-shadow: 0 26px 60px -18px rgba(61,56,51,0.4);
+}
+
+/* Big soft drop shadow for stacked mosaics */
+.soft-shadow-lg {
+  box-shadow: 0 30px 70px -25px rgba(61,56,51,0.5);
+}
+
+/* Wordmark underline sweep on hover */
+.sweep-underline {
+  position: relative;
+}
+.sweep-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 100%;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.sweep-underline:hover::after {
+  transform: scaleX(1);
+}
+
+/* Hairstroke lines for editorial dividers */
+.rule-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--color-steel) 40%, transparent), transparent);
 }
