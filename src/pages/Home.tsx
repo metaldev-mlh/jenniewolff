@@ -127,16 +127,13 @@ const Intro = () => (
           variants={fadeUp}
           className="text-xl md:text-2xl text-charcoal leading-relaxed mt-10"
         >
-          Clients arrive with a big idea, a growing business, a meaningful transition. Together, we
-          slow down, create space, and tune into deep insight. From there, we move into action.
+          Clients arrive with a big idea, a growing business, a meaningful transition. Together, we slow down, create space, and tune into deep insight. From there, we move into action.
         </motion.p>
         <motion.p
           variants={fadeUp}
           className="text-xl md:text-2xl text-charcoal leading-relaxed mt-6"
         >
-          I offer two decades of experience as a brand and marketing leader, enhanced by
-          ICM-certified coaching. This combination ensures external <em>and</em> internal growth
-          for lasting solutions.
+          I offer two decades of experience as a brand and marketing leader, enhanced by ICM-certified coaching. This combination ensures external and internal growth for lasting solutions.
         </motion.p>
         <motion.div variants={fadeUp} className="mt-10">
           <Link to="/about" className="ghost-button">
@@ -150,19 +147,16 @@ const Intro = () => (
 /* ─────────────────── THE IMPACT, testimonial previews ─────────────────── */
 const TESTIMONIAL_PREVIEWS = [
   {
-    quote: "She has a rare ability to balance intuition with structure. She doesn't just listen, she challenges, and does it in a way that actually moves you forward.",
-    name: "Jason Shader Smith",
-    role: "Individual",
+    quote: "Jennie has an amazing gift of creating an incredibly safe space, allowing for vulnerability and authenticity.",
+    name: "Melissa Bennett, Nike",
   },
   {
-    quote: "Working with Jennie has been pivotal for our team. We leave every session feeling accomplished and proud. She has a true talent of helping others operate as their best selves.",
-    name: "Katie Gillberg",
-    role: "Team",
+    quote: "Working with Jennie has been pivotal for our team. We leave every session feeling accomplished and proud.",
+    name: "Katie Gillberg, Hydrate IV Bar",
   },
   {
-    quote: "Jennie has seen me clearly since the very beginning. Her belief in me gave me the courage to stretch and grow. Her insight has been invaluable in helping me refine my services and grow with confidence.",
-    name: "Angela Levenson",
-    role: "Experience",
+    quote: "Jennie has seen me clearly since the very beginning, before I truly knew who I was or had the potential of becoming.",
+    name: "Angela Levenson, Founder of Home Again Organizing",
   },
 ];
 
@@ -186,8 +180,7 @@ const PhotoMosaic = () => (
               "{t.quote}"
             </p>
             <div className="mt-auto">
-              <p className="text-base uppercase tracking-widest text-terracotta font-bold">{t.role}</p>
-              <p className="font-serif text-charcoal mt-1">{t.name}</p>
+              <p className="font-serif text-charcoal">{t.name}</p>
             </div>
           </motion.div>
         ))}
