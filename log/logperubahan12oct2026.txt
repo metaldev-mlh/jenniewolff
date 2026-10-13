@@ -150,12 +150,52 @@ EM-DASH REMOVAL (GLOBAL)
   src/pages/Contact.tsx, src/pages/Testimonials.tsx, src/pages/PrivacyPolicy.tsx
 
 --------------------------------------------------------------------------------
+TESTIMONIALS - REAL CLIENT COPY ADDED
+--------------------------------------------------------------------------------
+
+- Replaced all placeholder testimonials with 6 real client testimonials from webcopydoc/doc.txt
+- Testimonials page now shows all 6:
+  1. Jason Shader Smith, MLH Agency (Individual) - photo included
+  2. Melissa Bennett, Nike (Individual)
+  3. Paul Bork, Dadventure (Individual)
+  4. Katie Gillberg, Hydrate IV Bar (Team)
+  5. Lizzie, Leader (Individual)
+  6. Angela Levenson, Founder, Home Again Organizing (Experience)
+- Home "The Impact" section updated:
+  - Team card: Katie Gillberg, Hydrate IV Bar
+  - Experience card: Angela Levenson, Home Again Organizing
+- Files: src/pages/Testimonials.tsx, src/pages/Home.tsx
+
+--------------------------------------------------------------------------------
+ABOUT PAGE - ADDITIONAL SECTIONS
+--------------------------------------------------------------------------------
+
+- Rewrote bio opening: now starts with brief personal story
+  ("I grew up believing that the best thing you could do for someone was really listen to them.")
+  before transitioning into career arc, per KEG request
+- Added Q+A section ("A few honest answers") with 4 questions:
+  - What do your clients usually arrive with?
+  - What makes your approach different?
+  - What do you believe about the work?
+  - Who is this work for?
+- Added "What I Believe" section (charcoal background, serif italic):
+  4 belief statements from webcopydoc/doc.txt
+- File: src/pages/About.tsx
+
+--------------------------------------------------------------------------------
+DEPLOYED
+--------------------------------------------------------------------------------
+
+- Build: clean (npm run build, 2.67s, no errors)
+- Committed: 596f791
+- Push: pending (HTTPS auth required - run: git push origin main)
+- Vercel auto-deploys on push to main
+
+--------------------------------------------------------------------------------
 PENDING (requires content or assets from client)
 --------------------------------------------------------------------------------
 
 - Hero photo: KEG requested outdoor photo at sister's home (new shoot)
-- Testimonials: real copy + photos for team (Sarah Callahan) and experience (Marcus Reid) clients
-- Logo: LogoJW.png still has "JENNIE WOLFF" text below monogram; KEG requested
-  clean JW only, needs further editing if required
-- About bio: KEG requested bio start with brief story, incorporate Q+A and
-  heart-centered information (copy TBD from client)
+- Testimonials: client photos for Melissa Bennett, Paul Bork, Katie Gillberg,
+  Lizzie, Angela Levenson (currently no photo shown for these entries)
+- Logo: confirmed clean JW only (LogoJW.png - done)

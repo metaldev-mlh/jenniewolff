@@ -66,19 +66,37 @@ const About = () => {
               className="space-y-8 text-xl text-charcoal leading-relaxed"
             >
               <motion.p variants={fadeUp} className="italic text-sage">
-               I grew up believing that the best thing you could do for someone was really listen to them. Not to fix, not to advise, just to be present long enough for them to hear themselves think.
+                A little about me.
               </motion.p>
               <motion.p variants={fadeUp}>
-               My career took me from live events and agency life to leading marketing and brand experience as CMO of Sola Salon Studios, an international franchise. Along the way, I worked alongside passionate founders, entrepreneurs, creatives, and leaders building businesses they cared deeply about.
+                I've spent the better part of two decades working with people to bring big ideas to life.
               </motion.p>
               <motion.p variants={fadeUp}>
-               And somewhere in the middle of all of it, I was navigating my own transitions. From corporate executive to entrepreneur. From workaholic to boundaried. From constantly doing to learning how to simply be.
+                My career has taken me from live events and agency life to the executive team of an international franchise, and eventually to building a business of my own. Along the way, I've helped build brands, grow businesses, inspire teams, and have collaborated with some pretty passionate founders, leaders and creative thinkers.
               </motion.p>
               <motion.p variants={fadeUp}>
-               Some of those transitions were exciting. Some were messy and painful. Most were both. I collected wisdom from mentors, coaches, therapists, retreats, life-changing books, challenging bosses, incredible teams, and the beautifully imperfect experience of being human.
+                I've always loved a good brainstorm. A great idea. An honest conversation. That moment when someone starts to see what's possible.
               </motion.p>
               <motion.p variants={fadeUp}>
-               Today, my work brings all of it together. Part strategy. Part reflection. Part coaching. Part conversation. A space to slow down, think clearly, and move forward with confidence. Still learning, always.
+                Behind every great business are real people with hopes, fears, insecurities, and full lives outside of work. Building something successful takes more than a great strategy. It takes understanding yourself, the people around you, and getting clear on what you're building it all for, anyway.
+              </motion.p>
+              <motion.p variants={fadeUp}>
+                I've collected wisdom in all kinds of places. From incredible mentors, bosses, coaches, shamans, life-changing books, global travels, retreats, sleepless nights, unexpected aha moments, and the beautifully imperfect experience of being human.
+              </motion.p>
+              <motion.p variants={fadeUp}>
+                Along the way, I've navigated my own transitions, too. From corporate executive to entrepreneur. From workaholic to learning boundaries. From constantly doing to learning how to simply be.
+              </motion.p>
+              <motion.p variants={fadeUp}>
+                Today, I bring those experiences together with my training as a Mastery Method Certified Coach to help people make meaningful changes in their businesses, their teams, and their lives.
+              </motion.p>
+              <motion.p variants={fadeUp}>
+                Some days, we're developing a new idea or figuring out how to move a business forward. Other days, we're working through a difficult decision, exploring what's getting in the way, or helping a team reconnect around what matters most.
+              </motion.p>
+              <motion.p variants={fadeUp}>
+                There's usually a little reflection, a lot of strategy, some creative thinking, and a few unexpected discoveries along the way. And we always leave with greater clarity and a simple plan of action.
+              </motion.p>
+              <motion.p variants={fadeUp} className="italic text-sage">
+                Still learning, always.
               </motion.p>
             </motion.div>
            <div className="relative">
