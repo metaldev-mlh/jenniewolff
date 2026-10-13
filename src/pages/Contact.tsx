@@ -2,15 +2,6 @@ import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { Instagram, Linkedin, Send } from 'lucide-react';
 
-const container = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.12 } },
-};
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1] as const } },
-};
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -40,7 +31,7 @@ const Contact = () => {
         >
           <h1 className="text-4xl md:text-5xl font-serif mb-6 text-terracotta italic">Thank you.</h1>
           <p className="text-xl md:text-2xl font-serif text-sage leading-relaxed">
-            I read every note personally and will get back to you within two business days. — Jennie
+            I read every note personally and will get back to you within two business days., Jennie
           </p>
         </motion.div>
       </div>
@@ -179,14 +170,11 @@ const Contact = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 1 }}
-              className="photo-frame rotate-[1.5deg] max-w-sm"
+              className="max-w-sm"
             >
-              <div className="aspect-[4/5] overflow-hidden rounded-xl">
+              <div className="aspect-[4/5] overflow-hidden rounded-[2rem]">
                 <img src="/jennie-ritual-studio.jpg" alt="Jennie Wolff" className="w-full h-full object-cover" />
               </div>
-              <p className="font-serif italic text-charcoal text-center pt-4">
-                "I read every note personally."
-              </p>
             </motion.div>
 
             <motion.div
@@ -231,35 +219,6 @@ const Contact = () => {
             </div>
         </div>
 
-        {/* What Happens Next — full-width below the form */}
-        <div className="max-container mt-16">
-          <motion.div
-            variants={container}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            className="bg-white rounded-3xl border border-sage/10 shadow-sm p-8 md:p-12"
-          >
-            <motion.h3 variants={fadeUp} className="text-sm uppercase tracking-widest text-sage font-bold mb-10">
-              What Happens Next
-            </motion.h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
-              {[
-                { t: "1. You write.", d: "Send a real note. The more honest, the better." },
-                { t: "2. I read every one personally.", d: "No assistant. No autoresponder dressed up as a person." },
-                { t: "3. We meet, if it's a fit.", d: "If your note and my practice are aligned, I'll invite you to a clarity session within two business days." }
-              ].map((step, i) => (
-                <motion.div key={i} variants={fadeUp} className="flex space-x-5">
-                  <span className="text-terracotta font-serif text-2xl leading-none">{i + 1}.</span>
-                  <div>
-                    <h4 className="font-serif text-lg mb-1">{step.t}</h4>
-                    <p className="text-sage text-sm leading-relaxed">{step.d}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
       </section>
     </div>
   );

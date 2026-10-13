@@ -1,0 +1,161 @@
+CHANGE LOG - October 13, 2026
+Based on feedback from K.E. Gregg (KEG - 10.4.26)
+
+--------------------------------------------------------------------------------
+GLOBAL
+--------------------------------------------------------------------------------
+
+- Replaced logo references from /logo.png and /logo2.png to /LogoJW.png
+  (new file provided by client, already in /public/LogoJW.png)
+
+- Removed footer marquee ticker (scrolling name/logo strip above footer)
+  File: src/components/Layout.tsx
+
+- Added Testimonials page to navbar and footer navigation
+  File: src/components/Layout.tsx
+
+--------------------------------------------------------------------------------
+HOME PAGE
+--------------------------------------------------------------------------------
+
+Hero section:
+- Changed eyebrow label from "Holistic Brand & Leadership Coaching" to "Visionary Consulting"
+- Changed headline from "Find clarity. / Live aligned." to "Experience clarity. / Align strategy."
+- Changed subtext to "Build and become your vision."
+- Removed "Start with a Conversation" primary button (KEG: AI speak, low-ticket coaching feel)
+- Kept "Meet Jennie" as the single CTA
+- File: src/pages/Home.tsx
+
+Band section:
+- Removed entirely (scrolling buzz words ticker)
+- File: src/pages/Home.tsx
+
+Section II (was: Intro quote):
+- Replaced large italic quote with two-column authority text layout
+- Left column: portrait photo (Jenniee.png)
+- Right column: kicker "The process." + body copy from KEG feedback + "Meet Jennie" link
+- Body copy: "Clients arrive with a big idea, a growing business, a meaningful transition.
+  Together, we slow down, create space, and tune into deep insight. From there, we move
+  into action. I offer two decades of experience as a brand and marketing leader, enhanced
+  by ICM-certified coaching. This combination ensures external and internal growth for
+  lasting solutions."
+- File: src/pages/Home.tsx
+
+Section III (was: PhotoMosaic "This is me" carousel):
+- Removed photo carousel, story copy, and "Read My Story" link entirely
+- Replaced with "The impact." section showing three testimonial preview cards:
+  one for individual, one for team, one for experience (1-2 lines each)
+- Added "Testimonials" link pointing to /testimonials
+- File: src/pages/Home.tsx
+
+Section IV (was: WaysToWork "Doorways in."):
+- Changed kicker from "Ways to work together" to "The container."
+- Changed heading to "Choose what serves your vision: individuals | teams | experiences."
+- Stripped elaborate descriptions from each service card
+- Cards now show title only (Individuals / Teams / Experiences) + "Learn More" link
+- File: src/pages/Home.tsx
+
+--------------------------------------------------------------------------------
+ABOUT PAGE
+--------------------------------------------------------------------------------
+
+- Removed Section 03: Glinda pull quote ("You've always had the power, my dear...")
+- Removed Section 04: North Stars / Values (five pill buttons with definitions)
+- Removed Section 05: scroll-driven 5-orb Process section (600vh sticky section)
+- Removed small accent photo overlay on bio portrait (jennie-ritual-studio.jpg)
+- Removed all unused imports and state variables (AnimatePresence, useState,
+  useScroll, useMotionValueEvent, PROCESS, PROCESS_POS, ProcessOrb, expandedValue,
+  procIndex, ringCircumference, values)
+- Kept: hero header, bio text, bio portrait, credentials, off the clock section, CTA
+- File: src/pages/About.tsx
+
+--------------------------------------------------------------------------------
+SERVICES PAGE
+--------------------------------------------------------------------------------
+
+- Rewrote page entirely (KEG: "nearly everything but the essence")
+- Removed: sticky nav, detailed service descriptions, What's Included lists,
+  How We Begin steps, signature photo, FAQ accordion
+- New structure: large header with "The container." title + three minimal service
+  cards in a grid (Individuals / Teams / Experiences) + single closing CTA
+- File: src/pages/Services.tsx
+
+--------------------------------------------------------------------------------
+CONTACT PAGE
+--------------------------------------------------------------------------------
+
+- Removed "What Happens Next" section (full-width block below the form)
+  (KEG: "a sophisticated clientele doesn't need a play by play")
+- Straightened photo: removed rotate-[1.5deg] tilt and "I read every note personally." caption
+- Removed unused container and fadeUp animation variants
+- File: src/pages/Contact.tsx
+
+--------------------------------------------------------------------------------
+TESTIMONIALS PAGE (NEW)
+--------------------------------------------------------------------------------
+
+- Created new page at src/pages/Testimonials.tsx
+- Added route /testimonials in src/App.tsx
+- Added to navbar and footer nav in src/components/Layout.tsx
+- Current content: one confirmed testimonial (Jason Shader Smith, MLH Agency)
+  and two placeholder entries pending real copy from client (team + experience)
+- Note: client photos needed for team and experience entries
+
+--------------------------------------------------------------------------------
+TESTIMONIALS - PLACEHOLDER NAMES UPDATED
+--------------------------------------------------------------------------------
+
+- Replaced "Team Client" with "Sarah Callahan" (VP of People, Foundry Co.)
+- Replaced "Experience Client" with "Marcus Reid" (Founder, Brightline Studio)
+- Updated both Testimonials page and Home page "The Impact" section to match
+- Files: src/pages/Testimonials.tsx, src/pages/Home.tsx
+
+--------------------------------------------------------------------------------
+FOOTER REDESIGN
+--------------------------------------------------------------------------------
+
+- Rebuilt footer layout: compact horizontal 3-column grid (brand / nav / connect)
+- Reduced vertical padding from pt-24 pb-12 to py-12
+- Brand column: logo now displayed side-by-side with tagline and description text
+- Logo size increased to h-32 to match height of adjacent text block
+- Restored full description text that was shortened in previous iteration
+- Nav link font size increased to text-lg for readability
+- Email font size increased to text-base
+- Social icon buttons reduced to w-9 h-9 (from w-12 h-12)
+- Removed decorative Sparkle and Crescent components from footer
+- Bottom bar font size reduced to 11px, less visual weight
+- File: src/components/Layout.tsx
+
+--------------------------------------------------------------------------------
+PRIVACY POLICY PAGE (NEW)
+--------------------------------------------------------------------------------
+
+- Created new page at src/pages/PrivacyPolicy.tsx
+- Added route /privacy-policy in src/App.tsx
+- Fixed footer "Privacy Policy" link from "#" to "/privacy-policy"
+- Sections: Overview, Information We Collect, How We Use, Cookies,
+  Third-Party Services, Data Security, Your Rights, Children's Privacy,
+  Changes to This Policy, Contact
+- File: src/pages/PrivacyPolicy.tsx, src/App.tsx, src/components/Layout.tsx
+
+--------------------------------------------------------------------------------
+EM-DASH REMOVAL (GLOBAL)
+--------------------------------------------------------------------------------
+
+- Replaced all em-dashes (U+2014) across all page files
+- " --- " mid-sentence replaced with ", "
+- Attribution dashes ("--- Roald Dahl", "--- Jennie") replaced with "- "
+- List item dashes in PrivacyPolicy replaced with ": "
+- Files: src/pages/Home.tsx, src/pages/About.tsx, src/pages/Services.tsx,
+  src/pages/Contact.tsx, src/pages/Testimonials.tsx, src/pages/PrivacyPolicy.tsx
+
+--------------------------------------------------------------------------------
+PENDING (requires content or assets from client)
+--------------------------------------------------------------------------------
+
+- Hero photo: KEG requested outdoor photo at sister's home (new shoot)
+- Testimonials: real copy + photos for team (Sarah Callahan) and experience (Marcus Reid) clients
+- Logo: LogoJW.png still has "JENNIE WOLFF" text below monogram; KEG requested
+  clean JW only, needs further editing if required
+- About bio: KEG requested bio start with brief story, incorporate Q+A and
+  heart-centered information (copy TBD from client)
