@@ -247,34 +247,36 @@ const About = () => {
                   </p>
                 </motion.div>
               </motion.div>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="relative h-[480px] md:h-[560px]">
                  <motion.div
-                   initial={{ opacity: 0, y: 20 }}
-                   whileInView={{ opacity: 1, y: 0 }}
-                   transition={{ duration: 0.9 }}
+                   initial={{ rotate: -6, y: 20, opacity: 0 }}
+                   whileInView={{ rotate: -4, y: 0, opacity: 1 }}
+                   transition={{ duration: 1 }}
                    viewport={{ once: true }}
-                   className="aspect-[3/4] rounded-[2rem] overflow-hidden col-span-2"
+                   className="absolute left-0 top-0 w-[58%] aspect-[3/4] rounded-[2rem] bg-blush overflow-hidden shadow-2xl z-20"
                  >
                    <img src="/jennie-family-forest.jpg" alt="Jennie hiking with her family" className="w-full h-full object-cover" />
                  </motion.div>
                  <motion.div
-                   initial={{ opacity: 0, y: 20 }}
-                   whileInView={{ opacity: 1, y: 0 }}
-                   transition={{ duration: 0.9, delay: 0.1 }}
+                   initial={{ rotate: 6, y: 40, opacity: 0 }}
+                   whileInView={{ rotate: 4, y: 0, opacity: 1 }}
+                   transition={{ duration: 1.1, delay: 0.15 }}
                    viewport={{ once: true }}
-                   className="aspect-square rounded-[2rem] overflow-hidden"
+                   className="absolute right-0 top-6 w-[52%] aspect-[3/4] rounded-[2rem] bg-sage/20 overflow-hidden shadow-2xl z-10"
                  >
                    <img src="/jennie-dog.jpg" alt="Jennie's dog" className="w-full h-full object-cover" />
                  </motion.div>
                  <motion.div
-                   initial={{ opacity: 0, y: 20 }}
-                   whileInView={{ opacity: 1, y: 0 }}
-                   transition={{ duration: 0.9, delay: 0.2 }}
+                   initial={{ rotate: -3, y: 30, opacity: 0 }}
+                   whileInView={{ rotate: -2, y: 0, opacity: 1 }}
+                   transition={{ duration: 1.2, delay: 0.3 }}
                    viewport={{ once: true }}
-                   className="aspect-square rounded-[2rem] overflow-hidden"
+                   className="absolute left-[18%] bottom-0 w-[50%] aspect-[3/4] rounded-[2rem] bg-terracotta/10 overflow-hidden shadow-2xl z-30 border-4 border-cream"
                  >
                    <img src="/jennie-family-selfie.jpg" alt="Jennie with her family" className="w-full h-full object-cover" />
                  </motion.div>
+                 <Sparkle className="hidden md:block absolute -top-4 right-[8%] text-gold z-40" size={18} />
+                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-terracotta/5 rounded-full blur-3xl -z-10" />
               </div>
             </div>
          </div>
