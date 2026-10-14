@@ -25,8 +25,6 @@ const Home = () => {
       <Intro />
       <PhotoMosaic />
       <WaysToWork />
-      <Approach />
-      <Testimonial />
       <ParallaxMoment />
       <Newsletter />
       <Closing />
@@ -127,13 +125,13 @@ const Intro = () => (
           variants={fadeUp}
           className="text-xl md:text-2xl text-charcoal leading-relaxed mt-10"
         >
-          Clients arrive with a big idea, a growing business, a meaningful transition. Together, we slow down, create space, and tune into deep insight. From there, we move into action.
+          Whether you have a big idea, a growing business, or you're navigating a transition, I create space for you to slow down, reconnect with what matters most, and get clear on your vision. From there, we move into action.
         </motion.p>
         <motion.p
           variants={fadeUp}
           className="text-xl md:text-2xl text-charcoal leading-relaxed mt-6"
         >
-          I offer two decades of experience as a brand and marketing leader, enhanced by ICM-certified coaching. This combination ensures external and internal growth for lasting solutions.
+          With two decades of experience as a brand and marketing leader alongside ICM-certified coaching, I blend strategy and intuition to support meaningful change.
         </motion.p>
         <motion.div variants={fadeUp} className="mt-10">
           <Link to="/about" className="ghost-button">
@@ -236,106 +234,6 @@ const WaysToWork = () => (
           </motion.div>
         ))}
       </div>
-    </div>
-  </section>
-);
-/* ─────────────────── THE APPROACH ─────────────────── */
-const steps = [
-  { n: '01', title: 'Slow Down', text: "We create the space to think clearly and hear what actually matters most." },
-  { n: '02', title: 'Find Clarity', text: "We get honest about what's in the way and what genuinely wants your attention." },
-  { n: '03', title: 'Take Aligned Action', text: "You leave with practical next steps that feel achievable and true to who you are." },
-];
-
-const ApproachOrb = ({ orb, delay }: { orb: { n: string; title: string; text: string }; delay: number }) => {
-  const ring = 2 * Math.PI * 48;
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] }}
-      className="flex flex-col items-center gap-6"
-    >
-      <div className="relative w-52 h-52 md:w-64 md:h-64">
-        {/* art fill */}
-        <div className="absolute inset-0 rounded-full overflow-hidden [mask-image:radial-gradient(circle_at_center,black_62%,transparent_82%)]">
-          <img src="/art.png" alt="" aria-hidden className="w-full h-full object-cover" />
-        </div>
-        {/* text */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-          <h4 className="text-charcoal font-serif text-xl md:text-2xl leading-tight">{orb.title}</h4>
-          <p className="text-charcoal/70 text-base md:text-base italic leading-snug mt-2 hidden md:block">{orb.text}</p>
-        </div>
-        {/* ring */}
-        <svg viewBox="0 0 100 100" className="absolute inset-0 h-full w-full overflow-visible pointer-events-none">
-          <circle cx="50" cy="50" r="48" fill="none" stroke="rgba(196,141,129,0.25)" strokeWidth="2" />
-          <motion.circle
-            cx="50" cy="50" r="48" fill="none" stroke="#B97765" strokeWidth="2.5" strokeLinecap="round"
-            strokeDasharray={`${ring} ${ring}`}
-            initial={{ strokeDashoffset: ring }}
-            whileInView={{ strokeDashoffset: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1.1, delay: delay + 0.3, ease: [0.22, 1, 0.36, 1] }}
-            transform="rotate(-90 50 50)"
-          />
-        </svg>
-      </div>
-      <p className="text-cream/60 text-base md:hidden text-center italic leading-snug px-4">{orb.text}</p>
-    </motion.div>
-  );
-};
-
-const Approach = () => (
-  <section className="bg-charcoal py-10 md:py-14 px-6 relative overflow-hidden">
-    <div className="absolute inset-0 opacity-20">
-      <img src="/ritual-studio-space.jpg" alt="" className="w-full h-full object-cover" aria-hidden />
-      <div className="absolute inset-0 bg-charcoal/85" />
-    </div>
-    <div className="max-container relative z-10">
-      <motion.div variants={container} initial="hidden" whileInView="show" viewport={{ once: true }} className="text-center mb-8">
-        <motion.span variants={fadeUp} className="kicker !text-cream">The approach</motion.span>
-        <motion.h2 variants={fadeUp} className="text-2xl md:text-4xl font-serif mt-4 text-cream max-w-2xl mx-auto leading-tight">
-          This is where transformation begins.
-        </motion.h2>
-      </motion.div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 justify-items-center">
-        {steps.map((s, i) => (
-          <ApproachOrb key={i} orb={s} delay={i * 0.15} />
-        ))}
-      </div>
-    </div>
-  </section>
-);
-
-/* ─────────────────── TESTIMONIAL ─────────────────── */
-const Testimonial = () => (
-  <section className="bg-cream py-10 md:py-14 px-6 relative overflow-hidden">
-    <Sparkle className="hidden md:block absolute top-20 left-[12%] text-gold/40" size={16} />
-    <Crescent className="hidden md:block absolute bottom-24 right-[12%] text-steel/30" size={30} delay={1} />
-    <div className="max-w-3xl mx-auto text-center">
-      <motion.blockquote
-        variants={fadeUp}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
-        className="font-serif italic text-3xl md:text-4xl leading-tight text-charcoal"
-      >
-        "She has a rare ability to balance intuition with structure. She doesn't just listen, she
-        challenges, and does it in a way that actually moves you forward instead of spinning you out."
-      </motion.blockquote>
-      <motion.footer
-        variants={fadeUp}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
-        className="mt-12"
-      >
-        <div className="mx-auto w-16 h-16 rounded-full overflow-hidden border-2 border-rose">
-          <img src="/230816-jason-shader-smith-portrait-0042-Yle2oRyR0vsB8ppV.avif" alt="Jason Shader Smith" className="w-full h-full object-cover" />
-        </div>
-        <p className="font-serif text-xl text-charcoal mt-4">Jason Shader Smith</p>
-        <p className="text-base uppercase tracking-widest text-sage font-bold mt-1">MLH Agency</p>
-      </motion.footer>
     </div>
   </section>
 );
