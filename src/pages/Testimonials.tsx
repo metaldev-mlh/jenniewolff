@@ -10,6 +10,13 @@ const fadeUp = {
 
 const TESTIMONIALS = [
   {
+    quote: "Working with Jennie has been pivotal for our team. We appreciate her thoughtfulness and intentionality and leave every session feeling accomplished and proud. She has a true talent of connecting with individuals and helping others operate as their best selves.",
+    name: "Katie Gillberg",
+    title: "Hydrate IV Bar",
+    photo: "/katie-gillberg.jpg",
+    type: "Team",
+  },
+  {
     quote: "She has a rare ability to balance intuition with structure. She doesn't just listen, she challenges, and does it in a way that actually moves you forward instead of spinning you out.",
     name: "Jason Shader Smith",
     title: "MLH Agency",
@@ -29,13 +36,6 @@ const TESTIMONIALS = [
     title: "Dadventure",
     photo: null,
     type: "Individual",
-  },
-  {
-    quote: "Working with Jennie has been pivotal for our team. We appreciate her thoughtfulness and intentionality and leave every session feeling accomplished and proud. She has a true talent of connecting with individuals and helping others operate as their best selves.",
-    name: "Katie Gillberg",
-    title: "Hydrate IV Bar",
-    photo: null,
-    type: "Team",
   },
   {
     quote: "You helped bring clarity and structure to both our marketing strategy and leadership approach. You also helped me better understand how to lead in a way that aligned with my strengths instead of constantly operating from pressure.",
