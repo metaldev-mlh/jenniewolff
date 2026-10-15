@@ -162,33 +162,46 @@ const About = () => {
 
        {/* 05 WHAT I BELIEVE */}
        <section className="section-padding bg-charcoal text-cream">
-         <div className="max-container max-w-3xl">
-           <motion.span
-             initial={{ opacity: 0, y: 16 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             viewport={{ once: true }}
-             className="kicker !text-cream mb-10 block"
-           >
-             What I believe
-           </motion.span>
-           <div className="space-y-6">
-             {[
-               "Growth rarely follows a straight line. Small, consistent actions create meaningful change over time.",
-               "Boundaries create freedom. Burnout is a terrible long-term strategy.",
-               "Some of our best ideas and biggest realizations come when we give ourselves permission to slow down.",
-               "We don't have to figure it all out alone.",
-             ].map((line, i) => (
-               <motion.p
-                 key={i}
-                 initial={{ opacity: 0, y: 20 }}
+         <div className="max-container">
+           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+             <div>
+               <motion.span
+                 initial={{ opacity: 0, y: 16 }}
                  whileInView={{ opacity: 1, y: 0 }}
-                 transition={{ duration: 0.7, delay: i * 0.1 }}
                  viewport={{ once: true }}
-                 className="font-serif italic text-2xl md:text-3xl text-cream/85 leading-snug"
+                 className="kicker text-cream! mb-10 block"
                >
-                 {line}
-               </motion.p>
-             ))}
+                 What I believe
+               </motion.span>
+               <div className="space-y-6">
+                 {[
+                   "Growth rarely follows a straight line. Small, consistent actions create meaningful change over time.",
+                   "Boundaries create freedom. Burnout is a terrible long-term strategy.",
+                   "Some of our best ideas and biggest realizations come when we give ourselves permission to slow down.",
+                   "We don't have to figure it all out alone.",
+                 ].map((line, i) => (
+                   <motion.p
+                     key={i}
+                     initial={{ opacity: 0, y: 20 }}
+                     whileInView={{ opacity: 1, y: 0 }}
+                     transition={{ duration: 0.7, delay: i * 0.1 }}
+                     viewport={{ once: true }}
+                     className="font-serif italic text-2xl md:text-3xl text-cream/85 leading-snug"
+                   >
+                     {line}
+                   </motion.p>
+                 ))}
+               </div>
+             </div>
+             <motion.div
+               initial={{ opacity: 0, scale: 0.95 }}
+               whileInView={{ opacity: 1, scale: 1 }}
+               transition={{ duration: 1.2 }}
+               viewport={{ once: true }}
+               className="hidden md:block aspect-3/4 rounded-[2.5rem] overflow-hidden shadow-2xl"
+             >
+               <img src="/Jennie-32.jpg" alt="Jennie Wolff" className="w-full h-full object-cover object-center" />
+             </motion.div>
            </div>
          </div>
        </section>
@@ -196,32 +209,45 @@ const About = () => {
        {/* 06 CREDENTIALS */}
        <section className="section-padding bg-navy">
          <div className="max-container">
-           <motion.h2
-             initial={{ opacity: 0, x: -20 }}
-             whileInView={{ opacity: 1, x: 0 }}
-             viewport={{ once: true }}
-             className="text-3xl md:text-5xl font-serif mb-16 border-b border-white/20 pb-8 text-white"
-           >
-             A few stops along the way
-           </motion.h2>
-           <div className="space-y-8">
-             {[
-               "Former CMO, Sola Salon Studios",
-               "Certified Coach, Institute of Coaching Mastery",
-               "Marketing leadership across events, agency, franchise, beauty, wellness, and lifestyle brands",
-               "Facilitator, coach, consultant, and lifelong learner"
-             ].map((cred, i) => (
-               <motion.p
-                 key={i}
-                 initial={{ opacity: 0, y: 20 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 transition={{ delay: i * 0.1 }}
+           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+             <motion.div
+               initial={{ opacity: 0, scale: 0.95 }}
+               whileInView={{ opacity: 1, scale: 1 }}
+               transition={{ duration: 1.2 }}
+               viewport={{ once: true }}
+               className="hidden md:block aspect-3/4 rounded-[2.5rem] overflow-hidden shadow-2xl"
+             >
+               <img src="/Jennie-49.jpg" alt="Jennie Wolff" className="w-full h-full object-cover object-top" />
+             </motion.div>
+             <div>
+               <motion.h2
+                 initial={{ opacity: 0, x: -20 }}
+                 whileInView={{ opacity: 1, x: 0 }}
                  viewport={{ once: true }}
-                 className="font-serif text-2xl md:text-3xl leading-tight text-white/80 hover:text-blush transition-colors"
+                 className="text-3xl md:text-5xl font-serif mb-16 border-b border-white/20 pb-8 text-white"
                >
-                 {cred}
-               </motion.p>
-             ))}
+                 A few stops along the way
+               </motion.h2>
+               <div className="space-y-8">
+                 {[
+                   "Former CMO, Sola Salon Studios",
+                   "Certified Coach, Institute of Coaching Mastery",
+                   "Marketing leadership across events, agency, franchise, beauty, wellness, and lifestyle brands",
+                   "Facilitator, coach, consultant, and lifelong learner"
+                 ].map((cred, i) => (
+                   <motion.p
+                     key={i}
+                     initial={{ opacity: 0, y: 20 }}
+                     whileInView={{ opacity: 1, y: 0 }}
+                     transition={{ delay: i * 0.1 }}
+                     viewport={{ once: true }}
+                     className="font-serif text-2xl md:text-3xl leading-tight text-white/80 hover:text-blush transition-colors"
+                   >
+                     {cred}
+                   </motion.p>
+                 ))}
+               </div>
+             </div>
            </div>
          </div>
        </section>
