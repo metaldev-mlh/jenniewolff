@@ -61,7 +61,7 @@ const Services = () => (
     </header>
 
     {/* THREE WAYS */}
-    <section className="section-padding pt-0 pb-32">
+    <section className="pt-0 pb-12 px-6">
       <div className="max-container">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-sage/10 rounded-[2.5rem] overflow-hidden border border-sage/10">
           {WAYS.map((w, i) => (
@@ -91,7 +91,7 @@ const Services = () => (
     </section>
 
     {/* CLOSING CTA */}
-    <section className="section-padding bg-cream pb-32">
+    <section className="bg-cream py-12 px-6">
       <div className="max-container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <motion.div
