@@ -273,91 +273,123 @@ const ParallaxMoment = () => {
 
 /* ─────────────────── NEWSLETTER ─────────────────── */
 const Newsletter = () => (
-  <section className="bg-linen py-10 md:py-14 px-6 relative overflow-hidden">
-    <Crescent className="hidden md:block absolute top-12 left-[14%] text-steel/30" size={30} />
-    <Sparkle className="absolute top-16 right-[16%] text-gold/40" size={16} delay={0.6} />
-    <div className="max-w-2xl mx-auto text-center">
-      <motion.span variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} className="kicker">
-        Notes from Jennie
-      </motion.span>
-      <motion.h2
+  <section className="bg-linen py-16 md:py-24 px-6 relative overflow-hidden">
+    <Crescent className="hidden md:block absolute top-12 left-[6%] text-steel/30" size={30} />
+    <Sparkle className="absolute top-16 right-[6%] text-gold/40" size={16} delay={0.6} />
+    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <motion.div
         variants={fadeUp}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="text-4xl md:text-5xl font-serif mt-8 mb-6 text-charcoal"
       >
-        A few thoughtful notes.
-      </motion.h2>
-      <motion.p
-        variants={fadeUp}
-        initial="hidden"
-        whileInView="show"
+        <motion.span variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }} className="kicker">
+          Notes from Jennie
+        </motion.span>
+        <motion.h2
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="text-4xl md:text-5xl font-serif mt-8 mb-6 text-charcoal"
+        >
+          A few thoughtful notes.
+        </motion.h2>
+        <motion.p
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="text-lg text-sage mb-8 italic leading-relaxed"
+        >
+          Ideas, reflections, rituals, and practical tools for navigating growth, leadership, and
+          life, sent from time to time, never as a pitch.
+        </motion.p>
+        <motion.form
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="flex flex-col sm:flex-row gap-4"
+          onSubmit={(e) => e.preventDefault()}
+        >
+          <input
+            type="email"
+            placeholder="Your email"
+            className="flex-grow bg-cream border border-steel/20 rounded-full px-8 py-4 focus:outline-none focus:ring-2 focus:ring-gold/50 text-charcoal placeholder:text-sage"
+            required
+          />
+          <button className="bg-terracotta text-white whitespace-nowrap px-10 py-4 text-lg rounded-full font-medium hover:opacity-90 hover:-translate-y-0.5 transition-all">
+            Subscribe
+          </button>
+        </motion.form>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.2 }}
         viewport={{ once: true }}
-        className="text-lg text-sage mb-6 italic leading-relaxed"
+        className="hidden md:block aspect-3/4 rounded-[2.5rem] overflow-hidden shadow-xl"
       >
-        Ideas, reflections, rituals, and practical tools for navigating growth, leadership, and
-        life, sent from time to time, never as a pitch.
-      </motion.p>
-      <motion.form
-        variants={fadeUp}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
-        className="flex flex-col sm:flex-row gap-4"
-        onSubmit={(e) => e.preventDefault()}
-      >
-        <input
-          type="email"
-          placeholder="Your email"
-          className="flex-grow bg-cream border border-steel/20 rounded-full px-8 py-4 focus:outline-none focus:ring-2 focus:ring-gold/50 text-charcoal placeholder:text-sage"
-          required
-        />
-        <button className="bg-terracotta text-white whitespace-nowrap px-10 py-4 text-lg rounded-full font-medium hover:opacity-90 hover:-translate-y-0.5 transition-all">
-          Subscribe
-        </button>
-      </motion.form>
+        <img src="/Jennie-10.jpg" alt="Jennie Wolff" className="w-full h-full object-cover" style={{ objectPosition: 'center 30%' }} />
+      </motion.div>
     </div>
   </section>
 );
 
 /* ─────────────────── CLOSING ─────────────────── */
 const Closing = () => (
-  <section className="bg-cream py-10 md:py-14 px-6 relative overflow-hidden text-center">
-    <Sparkle className="absolute top-16 left-[22%] text-gold/40" size={16} delay={0.4} />
-    <div className="max-w-3xl mx-auto">
-      <motion.h2
-        variants={fadeUp}
-        initial="hidden"
-        whileInView="show"
+  <section className="bg-cream py-16 md:py-24 px-6 relative overflow-hidden">
+    <Sparkle className="absolute top-16 right-[8%] text-gold/40" size={16} delay={0.4} />
+    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.2 }}
         viewport={{ once: true }}
-        className="text-3xl md:text-5xl font-serif text-charcoal mb-6"
+        className="hidden md:block aspect-3/4 rounded-[2.5rem] overflow-hidden shadow-xl"
       >
-        Ready to find your clarity and live in alignment?
-      </motion.h2>
-      <motion.p
-        variants={fadeUp}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
-        className="text-lg text-sage italic mb-6"
-      >
-        All it takes is that first honest conversation. I'll help you figure out the rest.
-      </motion.p>
-      <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
-        <Link to="/contact" className="primary-button inline-flex items-center">
-          Let's Start <ArrowRight size={20} className="ml-2" />
-        </Link>
+        <img src="/Jennie-51.jpg" alt="Jennie Wolff" className="w-full h-full object-cover object-top" />
       </motion.div>
-      <motion.p
+      <motion.div
         variants={fadeUp}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="mt-24 font-serif italic text-rose text-2xl"
       >
-        "Those who don't believe in magic will never find it.", Roald Dahl
-      </motion.p>
+        <motion.h2
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="text-3xl md:text-5xl font-serif text-charcoal mb-6"
+        >
+          Ready to find your clarity and live in alignment?
+        </motion.h2>
+        <motion.p
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="text-lg text-sage italic mb-8"
+        >
+          All it takes is that first honest conversation. I'll help you figure out the rest.
+        </motion.p>
+        <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
+          <Link to="/contact" className="primary-button inline-flex items-center">
+            Let's Start <ArrowRight size={20} className="ml-2" />
+          </Link>
+        </motion.div>
+        <motion.p
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="mt-16 font-serif italic text-rose text-2xl"
+        >
+          "Those who don't believe in magic will never find it.", Roald Dahl
+        </motion.p>
+      </motion.div>
     </div>
   </section>
 );
