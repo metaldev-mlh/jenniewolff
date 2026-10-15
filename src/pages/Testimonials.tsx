@@ -55,22 +55,22 @@ const TESTIMONIALS = [
 
 const Testimonials = () => (
   <div className="bg-cream overflow-x-clip">
-    <header className="bg-charcoal px-6 py-0">
+    <header className="bg-linen px-6 py-0">
       <div className="max-container grid grid-cols-1 md:grid-cols-2 gap-16 items-center min-h-[55vh] pt-20 pb-8 md:pl-36">
         <div>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-5xl md:text-9xl font-serif mb-6 text-cream leading-[0.9]"
+            className="text-5xl md:text-9xl font-serif mb-6 text-charcoal leading-[0.9]"
           >
-            The <span className="italic text-rose">impact.</span>
+            The <span className="italic text-terracotta">impact.</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="text-xl md:text-2xl text-cream/75 max-w-xl leading-relaxed"
+            className="text-xl md:text-2xl text-sage max-w-xl leading-relaxed"
           >
             Words from the people who've done the work.
           </motion.p>
