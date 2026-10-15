@@ -55,31 +55,33 @@ const TESTIMONIALS = [
 
 const Testimonials = () => (
   <div className="bg-cream overflow-x-clip">
-    <header className="bg-charcoal pt-32 pb-16 px-6">
-      <div className="max-container grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-        <div>
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="text-5xl md:text-9xl font-serif mb-6 text-cream leading-[0.9]"
-          >
-            The <span className="italic">impact.</span>
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
-            className="text-xl md:text-2xl text-cream/75 max-w-xl leading-relaxed"
-          >
-            Words from the people who've done the work.
-          </motion.p>
+    <header className="bg-charcoal overflow-hidden">
+      <div className="grid grid-cols-1 md:grid-cols-2 min-h-[60vh]">
+        <div className="flex items-center pt-32 pb-16 px-6 md:pl-16 lg:pl-24">
+          <div>
+            <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              className="text-5xl md:text-9xl font-serif mb-6 text-cream leading-[0.9]"
+            >
+              The <span className="italic">impact.</span>
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              className="text-xl md:text-2xl text-cream/75 max-w-xl leading-relaxed"
+            >
+              Words from the people who've done the work.
+            </motion.p>
+          </div>
         </div>
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 1.2 }}
-          className="hidden md:block aspect-[3/4] max-h-[520px] rounded-[2.5rem] overflow-hidden shadow-2xl"
+          className="hidden md:block"
         >
           <img src="/Jennie-3.png" alt="Jennie Wolff" className="w-full h-full object-cover object-top" />
         </motion.div>
