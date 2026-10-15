@@ -86,7 +86,7 @@ const Testimonials = () => (
       </div>
     </header>
 
-    <section className="section-padding pt-0 pb-32">
+    <section className="pt-0 pb-12 px-6">
       <div className="max-container space-y-8">
         {TESTIMONIALS.map((t, i) => (
           <motion.div
@@ -117,7 +117,7 @@ const Testimonials = () => (
       </div>
     </section>
 
-    <section className="section-padding bg-cream text-center pb-32">
+    <section className="bg-cream text-center py-12 px-6">
       <div className="max-container">
         <motion.p
           variants={fadeUp}
