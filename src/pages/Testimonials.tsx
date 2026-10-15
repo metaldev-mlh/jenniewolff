@@ -55,8 +55,8 @@ const TESTIMONIALS = [
 
 const Testimonials = () => (
   <div className="bg-cream overflow-x-clip">
-    <header className="bg-charcoal pt-32 pb-16 px-6">
-      <div className="max-container grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+    <header className="bg-charcoal px-6 py-0">
+      <div className="max-container grid grid-cols-1 md:grid-cols-2 gap-16 items-center min-h-[55vh] pt-20 pb-8 md:pl-36">
         <div>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
