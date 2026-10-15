@@ -55,34 +55,28 @@ const TESTIMONIALS = [
 
 const Testimonials = () => (
   <div className="bg-cream overflow-x-clip">
-    <header className="pt-28 pb-6">
-      <div className="max-container grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div>
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="text-5xl md:text-9xl font-serif mb-6 text-charcoal leading-[0.9]"
-          >
-            The <span className="italic">impact.</span>
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
-            className="text-xl md:text-2xl text-sage max-w-2xl leading-relaxed"
-          >
-            Words from the people who've done the work.
-          </motion.p>
-        </div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2 }}
-          className="hidden md:block aspect-3/4 max-h-[420px] rounded-[2.5rem] overflow-hidden shadow-xl"
+    <header className="relative min-h-[60vh] flex items-center overflow-hidden bg-charcoal">
+      <div className="absolute inset-0">
+        <img src="/Jennie-3.png" alt="" aria-hidden className="w-full h-full object-cover object-top" />
+        <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-charcoal/40 to-transparent" />
+      </div>
+      <div className="max-container relative z-10 pt-32 pb-16">
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-5xl md:text-9xl font-serif mb-6 text-cream leading-[0.9]"
         >
-          <img src="/Jennie-3.png" alt="Jennie Wolff" className="w-full h-full object-cover object-top" />
-        </motion.div>
+          The <span className="italic">impact.</span>
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="text-xl md:text-2xl text-cream/75 max-w-2xl leading-relaxed"
+        >
+          Words from the people who've done the work.
+        </motion.p>
       </div>
     </header>
 
