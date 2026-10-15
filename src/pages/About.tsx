@@ -255,57 +255,102 @@ const About = () => {
        {/* 07 OFF THE CLOCK */}
        <section className="section-padding bg-cream relative overflow-hidden">
          <div className="max-container">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
-              <motion.div
-                variants={container}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
-              >
-                <motion.h2 variants={fadeUp} className="text-4xl md:text-5xl font-serif mb-8 text-terracotta flex items-center gap-3">
-                  When I'm Not Working <Sparkle className="text-gold" size={20} />
-                </motion.h2>
-                <motion.div variants={fadeUp} className="space-y-6 text-lg text-sage leading-relaxed italic">
-                  <p>
-                    You'll usually find me with my feet in the grass at Wash Park, taking a long walk or hike with my pup, practicing yoga, catching a live show, gathering with friends and family, or chasing my two little humans around.
-                  </p>
-                  <p>
-                    I believe wellness is worth prioritizing. Connection matters. And joy belongs in the everyday moments.
-                  </p>
-                </motion.div>
-              </motion.div>
-              <div className="relative h-[480px] md:h-[560px]">
+           <motion.h2
+             initial={{ opacity: 0, y: 20 }}
+             whileInView={{ opacity: 1, y: 0 }}
+             viewport={{ once: true }}
+             className="text-4xl md:text-5xl font-serif mb-20 text-terracotta text-center flex items-center justify-center gap-3"
+           >
+             When I'm Not Working <Sparkle className="text-gold" size={20} />
+           </motion.h2>
+
+           {/* Timeline */}
+           <div className="relative">
+             {/* Center line */}
+             <div className="hidden md:block absolute left-1/2 -translate-x-px top-0 bottom-0 w-px bg-sage/20" />
+
+             <div className="space-y-16 md:space-y-0">
+
+               {/* Row 1 — text left, photo right */}
+               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0 items-center">
                  <motion.div
-                   initial={{ rotate: -6, y: 20, opacity: 0 }}
-                   whileInView={{ rotate: -4, y: 0, opacity: 1 }}
-                   transition={{ duration: 1 }}
+                   initial={{ opacity: 0, x: -30 }}
+                   whileInView={{ opacity: 1, x: 0 }}
+                   transition={{ duration: 0.8 }}
                    viewport={{ once: true }}
-                   className="absolute left-0 top-0 w-[58%] aspect-[3/4] rounded-[2rem] bg-blush overflow-hidden shadow-2xl z-20"
+                   className="md:pr-16 md:text-right space-y-4 md:py-12"
                  >
-                   <img src="/jennie-family-forest.jpg" alt="Jennie hiking with her family" className="w-full h-full object-cover" />
+                   {["Feet in the grass at Wash Park", "Hiking with my pup", "Practicing yoga"].map((item, i) => (
+                     <p key={i} className="text-lg md:text-xl font-serif text-charcoal border-b border-sage/15 pb-4 last:border-0">{item}</p>
+                   ))}
                  </motion.div>
                  <motion.div
-                   initial={{ rotate: 6, y: 40, opacity: 0 }}
-                   whileInView={{ rotate: 4, y: 0, opacity: 1 }}
-                   transition={{ duration: 1.1, delay: 0.15 }}
+                   initial={{ opacity: 0, x: 30 }}
+                   whileInView={{ opacity: 1, x: 0 }}
+                   transition={{ duration: 0.8, delay: 0.1 }}
                    viewport={{ once: true }}
-                   className="absolute right-0 top-6 w-[52%] aspect-[3/4] rounded-[2rem] bg-sage/20 overflow-hidden shadow-2xl z-10"
+                   className="md:pl-16"
                  >
-                   <img src="/jennie-dog.jpg" alt="Jennie's dog" className="w-full h-full object-cover" />
+                   <div className="w-64 aspect-3/4 rounded-[1.5rem] overflow-hidden shadow-xl">
+                     <img src="/jennie-family-forest.jpg" alt="Jennie with family" className="w-full h-full object-cover" />
+                   </div>
+                 </motion.div>
+               </div>
+
+               {/* Row 2 — photo left, text right */}
+               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0 items-center">
+                 <motion.div
+                   initial={{ opacity: 0, x: -30 }}
+                   whileInView={{ opacity: 1, x: 0 }}
+                   transition={{ duration: 0.8 }}
+                   viewport={{ once: true }}
+                   className="md:pr-16 flex md:justify-end"
+                 >
+                   <div className="w-64 aspect-3/4 rounded-[1.5rem] overflow-hidden shadow-xl">
+                     <img src="/jennie-family-selfie.jpg" alt="Jennie with family" className="w-full h-full object-cover" />
+                   </div>
                  </motion.div>
                  <motion.div
-                   initial={{ rotate: -3, y: 30, opacity: 0 }}
-                   whileInView={{ rotate: -2, y: 0, opacity: 1 }}
-                   transition={{ duration: 1.2, delay: 0.3 }}
+                   initial={{ opacity: 0, x: 30 }}
+                   whileInView={{ opacity: 1, x: 0 }}
+                   transition={{ duration: 0.8, delay: 0.1 }}
                    viewport={{ once: true }}
-                   className="absolute left-[18%] bottom-0 w-[50%] aspect-[3/4] rounded-[2rem] bg-terracotta/10 overflow-hidden shadow-2xl z-30 border-4 border-cream"
+                   className="md:pl-16 space-y-4 md:py-12"
                  >
-                   <img src="/jennie-family-selfie.jpg" alt="Jennie with her family" className="w-full h-full object-cover" />
+                   {["Catching a live show", "Gathering with friends and family", "Chasing my two little humans"].map((item, i) => (
+                     <p key={i} className="text-lg md:text-xl font-serif text-charcoal border-b border-sage/15 pb-4 last:border-0">{item}</p>
+                   ))}
                  </motion.div>
-                 <Sparkle className="hidden md:block absolute -top-4 right-[8%] text-gold z-40" size={18} />
-                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-terracotta/5 rounded-full blur-3xl -z-10" />
-              </div>
-            </div>
+               </div>
+
+               {/* Row 3 — text left, photo right */}
+               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-0 items-center">
+                 <motion.div
+                   initial={{ opacity: 0, x: -30 }}
+                   whileInView={{ opacity: 1, x: 0 }}
+                   transition={{ duration: 0.8 }}
+                   viewport={{ once: true }}
+                   className="md:pr-16 md:text-right md:py-12"
+                 >
+                   <p className="text-2xl md:text-3xl font-serif italic text-sage leading-relaxed">
+                     Wellness is worth prioritizing. Connection matters. And joy belongs in the everyday moments.
+                   </p>
+                 </motion.div>
+                 <motion.div
+                   initial={{ opacity: 0, x: 30 }}
+                   whileInView={{ opacity: 1, x: 0 }}
+                   transition={{ duration: 0.8, delay: 0.1 }}
+                   viewport={{ once: true }}
+                   className="md:pl-16"
+                 >
+                   <div className="w-64 aspect-3/4 rounded-[1.5rem] overflow-hidden shadow-xl">
+                     <img src="/Jennie-56.jpg" alt="Jennie" className="w-full h-full object-cover object-top" />
+                   </div>
+                 </motion.div>
+               </div>
+
+             </div>
+           </div>
          </div>
        </section>
 
