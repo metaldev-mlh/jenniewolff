@@ -43,12 +43,13 @@ const Hero = () => {
     <section className="relative min-h-[70vh] flex items-center overflow-hidden bg-charcoal">
       <motion.div style={{ y, scale }} className="absolute inset-0 animate-drift">
         <img
-          src="/jennieart.jpeg"
+          src="/Jennie-39.jpg"
           alt="Jennie Wolff, portrait"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover"
+          style={{ objectPosition: 'center 25%' }}
         />
       </motion.div>
-      <div className="absolute inset-0 bg-gradient-to-b from-charcoal/70 via-charcoal/35 to-cream/95" />
+      <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-charcoal/40 to-transparent" />
 
       <motion.div
         style={{ opacity }}
@@ -58,7 +59,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.1 }}
-          className="inline-flex items-center gap-3 text-base uppercase tracking-[0.35em] font-semibold text-cream/80 mb-5"
+          className="text-sm uppercase tracking-[0.35em] font-semibold text-cream/80 mb-5 block"
         >
           Visionary Consulting
         </motion.span>
@@ -97,7 +98,6 @@ const Hero = () => {
           </Link>
         </motion.div>
       </motion.div>
-
     </section>
   );
 };
@@ -114,7 +114,7 @@ const Intro = () => (
         className="aspect-[3/4] bg-sage/10 rounded-[3rem] overflow-hidden relative"
       >
         <img
-          src="/Jenniee.png"
+          src="/Jennie-59.jpg"
           alt="Jennie Wolff"
           className="w-full h-full object-cover"
         />
@@ -249,8 +249,8 @@ const ParallaxMoment = () => {
     <section className="relative h-[70vh] md:h-[85vh] overflow-hidden">
       <motion.div style={{ y }} className="absolute inset-0">
         <img
-          src="/jennie-family-forest.jpg"
-          alt="Jennie with her family in the forest"
+          src="/Jennie-28.jpg"
+          alt="Jennie smiling"
           className="w-full h-[116%] object-cover"
         />
         <div className="absolute inset-0 bg-charcoal/35" />

@@ -199,3 +199,40 @@ PENDING (requires content or assets from client)
 - Testimonials: client photos for Melissa Bennett, Paul Bork, Katie Gillberg,
   Lizzie, Angela Levenson (currently no photo shown for these entries)
 - Logo: confirmed clean JW only (LogoJW.png - done)
+
+--------------------------------------------------------------------------------
+ABOUT PAGE + NEW PHOTOS - October 15, 2026
+Based on client-provided bio copy and photo guide (artifact BopJwWThfRbsN9isEUiHG6)
+--------------------------------------------------------------------------------
+
+Bio copy (section 02):
+- Rewrote all bio paragraphs to match final client-approved copy verbatim
+- Changed "Mastery Method Certified Coach" to "Certified Mastery Method Coach" (client's wording)
+- Paragraph "Today, I run a business of my own." added as standalone line
+- Updated beliefs to match new copy:
+  - "...create meaningful change over time." (added "over time")
+  - Replaced "You don't have to carry everything alone." with
+    "Some of our best ideas and biggest realizations come when we give ourselves permission to slow down."
+  - Changed last belief to "We don't have to figure it all out alone."
+- File: src/pages/About.tsx
+
+New photos added to /public (14 files, pulled from client artifact):
+  Jennie-10.jpg  Jennie-16.jpg  Jennie-28.jpg  Jennie-32.jpg
+  Jennie-39.jpg  Jennie-41.jpg  Jennie-46.jpg  Jennie-49.jpg
+  Jennie-51.jpg  Jennie-56.jpg  Jennie-58.jpg  Jennie-59.jpg
+  Jennie-62.jpg  Jennie-65.jpg
+
+Photo usage applied:
+- Bio portrait (section 02): /Jennie-49.jpg (was Jenniee.png)
+  ^ top pick per client guide: brick wall, arms crossed, direct eye contact
+
+Photo usage guide (reference for future sections):
+- Hero banners:      Jennie-58.jpg (blue sofa, bright room) | Jennie-28.jpg (ritual room) | Jennie-39.jpg (armchair, calm)
+- About/lifestyle:   Jennie-56.jpg (natural laugh) | Jennie-59.jpg (polished sofa) | Jennie-41.jpg (hand on cheek)
+- Book/storytelling: Jennie-10.jpg (holding Your Story Is Your Power)
+- Services/process:  Jennie-65.jpg (journaling at desk) | Jennie-62.jpg (candid writing)
+- Wellness:          Jennie-16.jpg (egg chair) | Jennie-32.jpg (ritual room, palo santo)
+- Alternate headshot: Jennie-46.jpg (denim jacket) | Jennie-51.jpg (seated, softer)
+
+Note: These are web-sized previews (2000px long edge). Replace with full-res/retouched
+originals from Madi when available for production quality.

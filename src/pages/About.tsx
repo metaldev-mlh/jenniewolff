@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { Sparkle, Crescent } from '../components/Decorative';
+import { Sparkle } from '../components/Decorative';
 
 const container = {
   hidden: {},
@@ -22,32 +22,31 @@ const About = () => {
   return (
     <div className="bg-cream overflow-x-clip">
        {/* 01 HEADER */}
-       <header className="relative overflow-hidden pt-40 pb-24">
+       <header className="relative overflow-hidden min-h-[85vh] flex items-center">
          <div className="absolute inset-0">
-           <img src="/jennie-family-forest.jpg" alt="" aria-hidden className="w-full h-full object-cover object-center" />
-           <div className="absolute inset-0 bg-gradient-to-b from-cream via-transparent to-cream" />
+           <img src="/Jennie-28.jpg" alt="" aria-hidden className="w-full h-full object-cover object-center" />
+           <div className="absolute inset-0 bg-gradient-to-l from-charcoal/80 via-charcoal/30 to-transparent" />
          </div>
-         <Crescent className="hidden md:block absolute top-24 right-[18%] text-cream/70" size={28} />
-         <Sparkle className="hidden md:block absolute top-16 left-[42%] text-gold/70" size={14} delay={1} />
-         <div className="max-container relative">
-           <motion.div 
+         <div className="max-container relative w-full flex justify-end pt-32 pb-16">
+           <motion.div
              initial={{ opacity: 0, y: 24 }}
              animate={{ opacity: 1, y: 0 }}
-             transition={{ duration: 0.8 }}
-             className="bg-cream/70 backdrop-blur-xl border border-white/40 rounded-3xl p-8 md:p-10 max-w-2xl shadow-[0_12px_40px_rgba(0,0,0,0.12)]"
+             transition={{ duration: 0.9 }}
+             className="max-w-xl"
            >
-             <motion.span 
+             <motion.span
                initial={{ opacity: 0, y: 10 }}
                animate={{ opacity: 1, y: 0 }}
-               className="text-sm uppercase tracking-widest text-terracotta font-semibold mb-6 block"
+               transition={{ delay: 0.2 }}
+               className="text-sm uppercase tracking-widest text-blush font-semibold mb-6 block"
              >
                About Jennie
              </motion.span>
-             <motion.h1 
+             <motion.h1
                initial={{ opacity: 0, y: 30 }}
                animate={{ opacity: 1, y: 0 }}
-               transition={{ duration: 1 }}
-               className="text-3xl md:text-4xl font-serif leading-[1.15] text-charcoal"
+               transition={{ duration: 1, delay: 0.25 }}
+               className="text-3xl md:text-4xl lg:text-5xl font-serif leading-[1.15] text-cream"
              >
                I've always loved people. Their stories, their ideas, their dreams, and the <span className="italic">moment they know</span> something needs to change.
              </motion.h1>
@@ -69,52 +68,54 @@ const About = () => {
                 A little about me.
               </motion.p>
               <motion.p variants={fadeUp}>
-                I've spent the better part of two decades working with people to bring big ideas to life.
+                I work with people to bring big ideas to life.
               </motion.p>
               <motion.p variants={fadeUp}>
-                My career has taken me from live events and agency life to the executive team of an international franchise, and eventually to building a business of my own. Along the way, I've helped build brands, grow businesses, inspire teams, and have collaborated with some pretty passionate founders, leaders and creative thinkers.
+                For the better part of two decades, I pursued a career from live events and agencies to the executive team of an international franchise. Along the way, I helped build brands, grow businesses, and inspire teams, while collaborating with passionate founders, leaders and creatives.
               </motion.p>
               <motion.p variants={fadeUp}>
-                I've always loved a good brainstorm. A great idea. An honest conversation. That moment when someone starts to see what's possible.
+                Today, I run a business of my own.
               </motion.p>
               <motion.p variants={fadeUp}>
-                Behind every great business are real people with hopes, fears, insecurities, and full lives outside of work. Building something successful takes more than a great strategy. It takes understanding yourself, the people around you, and getting clear on what you're building it all for, anyway.
+                I have always loved a good brainstorm. A great idea. An honest conversation. That moment when someone starts to see what's possible.
               </motion.p>
               <motion.p variants={fadeUp}>
-                I've collected wisdom in all kinds of places. From incredible mentors, bosses, coaches, shamans, life-changing books, global travels, retreats, sleepless nights, unexpected aha moments, and the beautifully imperfect experience of being human.
+                Behind every great business, I see real people with hopes, fears, insecurities, dreams, and full lives outside of work. I know that success takes more than great strategy. It takes understanding yourself, those around you, and your deepest desires.
               </motion.p>
               <motion.p variants={fadeUp}>
-                Along the way, I've navigated my own transitions, too. From corporate executive to entrepreneur. From workaholic to learning boundaries. From constantly doing to learning how to simply be.
+                I have collected wisdom from incredible mentors, bosses, coaches, shamans, life-changing books, global travels, retreats, sleepless nights, unexpected aha moments, and the beautifully imperfect experience of being human.
               </motion.p>
               <motion.p variants={fadeUp}>
-                Today, I bring those experiences together with my training as a Mastery Method Certified Coach to help people make meaningful changes in their businesses, their teams, and their lives.
+                From corporate executive to entrepreneur, I have navigated my own transitions, too. From workaholic to healthy boundaries. From constantly doing to finding balance and being.
               </motion.p>
               <motion.p variants={fadeUp}>
-                Some days, we're developing a new idea or figuring out how to move a business forward. Other days, we're working through a difficult decision, exploring what's getting in the way, or helping a team reconnect around what matters most.
+                Today, I bring these experiences together with my training as a Certified Mastery Method Coach to help clients make meaningful changes in their businesses, their teams, and their lives.
               </motion.p>
               <motion.p variants={fadeUp}>
-                There's usually a little reflection, a lot of strategy, some creative thinking, and a few unexpected discoveries along the way. And we always leave with greater clarity and a simple plan of action.
+                Some days, we develop a new idea or move a business forward. Other days, we work through a difficult decision, explore what's getting in the way, or reconnect a team around what matters most. There is reflection, strategy, creative thinking, and unexpected discoveries. And we always leave with greater clarity and a plan for what comes next.
               </motion.p>
               <motion.p variants={fadeUp} className="italic text-sage">
                 Still learning, always.
               </motion.p>
             </motion.div>
            <div className="relative">
-             <motion.div
-               initial={{ opacity: 0, scale: 0.95 }}
-               whileInView={{ opacity: 1, scale: 1 }}
-               transition={{ duration: 1.2 }}
-               viewport={{ once: true }}
-               className="aspect-[3/4] bg-sage/10 rounded-[3rem] overflow-hidden relative group"
-             >
-                <img
-                  src="/Jenniee.png"
-                  alt="Jennie Wolff"
-                  className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-terracotta/5 mix-blend-overlay group-hover:opacity-0 transition-opacity" />
-             </motion.div>
-             <Sparkle className="hidden md:block absolute -top-6 -right-4 text-gold" size={16} />
+             <div className="sticky top-24">
+               <motion.div
+                 initial={{ opacity: 0, scale: 0.95 }}
+                 whileInView={{ opacity: 1, scale: 1 }}
+                 transition={{ duration: 1.2 }}
+                 viewport={{ once: true }}
+                 className="aspect-[3/4] bg-sage/10 rounded-[3rem] overflow-hidden relative group"
+               >
+                 <img
+                   src="/Jennie-62.jpg"
+                   alt="Jennie Wolff"
+                   className="w-full h-full object-cover object-top transition-transform duration-1000 group-hover:scale-105"
+                 />
+                 <div className="absolute inset-0 bg-terracotta/5 mix-blend-overlay group-hover:opacity-0 transition-opacity" />
+               </motion.div>
+               <Sparkle className="hidden md:block absolute -top-6 -right-4 text-gold" size={16} />
+             </div>
            </div>
          </div>
        </section>
@@ -172,10 +173,10 @@ const About = () => {
            </motion.span>
            <div className="space-y-6">
              {[
-               "Growth rarely follows a straight line. Small, consistent actions create meaningful change.",
+               "Growth rarely follows a straight line. Small, consistent actions create meaningful change over time.",
                "Boundaries create freedom. Burnout is a terrible long-term strategy.",
-               "You don't have to carry everything alone.",
-               "And clarity changes everything.",
+               "Some of our best ideas and biggest realizations come when we give ourselves permission to slow down.",
+               "We don't have to figure it all out alone.",
              ].map((line, i) => (
                <motion.p
                  key={i}

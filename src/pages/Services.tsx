@@ -35,13 +35,17 @@ const WAYS = [
 const Services = () => (
   <div className="bg-cream overflow-x-clip">
     {/* HEADER */}
-    <header className="section-padding pt-40 pb-20 relative">
-      <div className="max-container relative z-10">
+    <header className="relative min-h-[60vh] flex items-center overflow-hidden bg-charcoal">
+      <div className="absolute inset-0">
+        <img src="/Jennie-58.jpg" alt="" aria-hidden className="w-full h-full object-cover" style={{ objectPosition: 'center 25%' }} />
+        <div className="absolute inset-0 bg-gradient-to-r from-charcoal/75 via-charcoal/40 to-transparent" />
+      </div>
+      <div className="max-container relative z-10 pt-32 pb-16">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-5xl md:text-9xl font-serif mb-10 text-charcoal leading-[0.9]"
+          className="text-5xl md:text-9xl font-serif mb-10 text-cream leading-[0.9]"
         >
           The <span className="italic">container.</span>
         </motion.h1>
@@ -49,7 +53,7 @@ const Services = () => (
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="text-xl md:text-2xl text-sage max-w-2xl leading-relaxed"
+          className="text-xl md:text-2xl text-cream/80 max-w-2xl leading-relaxed"
         >
           Choose what serves your vision.
         </motion.p>
@@ -87,22 +91,32 @@ const Services = () => (
     </section>
 
     {/* CLOSING CTA */}
-    <section className="section-padding bg-cream text-center pb-32">
+    <section className="section-padding bg-cream pb-32">
       <div className="max-container">
-        <motion.p
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="text-xl md:text-2xl font-serif italic text-sage mb-10 max-w-xl mx-auto"
-        >
-          Not sure where to start? Let's begin with a conversation.
-        </motion.p>
-        <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
-          <Link to="/contact" className="terracotta-button inline-flex items-center">
-            Connect <ArrowRight size={20} className="ml-2" />
-          </Link>
-        </motion.div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.2 }}
+            viewport={{ once: true }}
+            className="aspect-3/4 rounded-[2.5rem] overflow-hidden shadow-xl"
+          >
+            <img src="/Jennie-41.jpg" alt="Jennie Wolff" className="w-full h-full object-cover object-top" />
+          </motion.div>
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
+            <p className="text-2xl md:text-3xl font-serif italic text-sage mb-10 leading-relaxed">
+              Not sure where to start? Let's begin with a conversation.
+            </p>
+            <Link to="/contact" className="terracotta-button inline-flex items-center">
+              Connect <ArrowRight size={20} className="ml-2" />
+            </Link>
+          </motion.div>
+        </div>
       </div>
     </section>
   </div>

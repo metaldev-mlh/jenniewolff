@@ -173,7 +173,7 @@ const Contact = () => {
               className="max-w-sm"
             >
               <div className="aspect-[4/5] overflow-hidden rounded-[2rem]">
-                <img src="/jennie-ritual-studio.jpg" alt="Jennie Wolff" className="w-full h-full object-cover" />
+                <img src="/Jennie-16.jpg" alt="Jennie Wolff" className="w-full h-full object-cover object-center" />
               </div>
             </motion.div>
 
