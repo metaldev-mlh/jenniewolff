@@ -64,7 +64,7 @@ const Testimonials = () => (
             transition={{ duration: 1 }}
             className="text-5xl md:text-9xl font-serif mb-6 text-cream leading-[0.9]"
           >
-            The <span className="italic">impact.</span>
+            The <span className="italic text-rose">impact.</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
