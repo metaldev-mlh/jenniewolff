@@ -40,7 +40,7 @@ const Contact = () => {
 
   return (
     <div className="bg-cream overflow-hidden">
-      <header className="pt-28 pb-6 px-6 relative overflow-hidden">
+      <header className="pt-28 pb-0 px-6 relative overflow-hidden">
         <div className="absolute inset-0">
           <img src="/jennie-family-forest.jpg" alt="" className="w-full h-full object-cover object-center opacity-15" aria-hidden />
           <div className="absolute inset-0 bg-gradient-to-b from-cream via-cream/70 to-cream" />
@@ -65,7 +65,7 @@ const Contact = () => {
         </div>
       </header>
 
-      <section className="section-padding pt-0">
+      <section className="py-10 px-6">
         <div className="max-container grid grid-cols-1 lg:grid-cols-12 gap-16">
           <motion.div
               initial={{ opacity: 0, y: 30 }}
