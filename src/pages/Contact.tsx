@@ -131,7 +131,7 @@ const Contact = () => {
                   {[
                     "1:1 coaching",
                     "Team & leadership",
-                    "Consulting & advisory",
+                    "Experiences",
                     "Not sure yet"
                   ].map((type) => (
                     <label key={type} className="flex items-center space-x-3 cursor-pointer group">

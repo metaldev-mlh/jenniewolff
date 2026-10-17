@@ -3,10 +3,6 @@ import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1] as const } },
-};
 
 const WAYS = [
   {
@@ -25,7 +21,7 @@ const WAYS = [
   },
   {
     label: 'Experiences',
-    headline: 'Consulting & Advisory',
+    headline: 'Experiences',
     sub: 'Senior brand and strategy support for founders growing with intention, without a full-time hire.',
     to: '/contact',
     cta: 'Inquire',
@@ -45,7 +41,7 @@ const Services = () => (
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="text-5xl md:text-9xl font-serif mb-10 text-cream leading-[0.9]"
+          className="text-4xl md:text-6xl font-serif mb-6 text-cream leading-[1.05]"
         >
           The <span className="italic">container.</span>
         </motion.h1>
@@ -65,14 +61,7 @@ const Services = () => (
       <div className="max-container">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-sage/10 rounded-[2.5rem] overflow-hidden border border-sage/10">
           {WAYS.map((w, i) => (
-            <motion.div
-              key={i}
-              variants={fadeUp}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true }}
-              className="bg-cream p-10 md:p-14 flex flex-col gap-8 group"
-            >
+            <div key={i} className="bg-cream p-10 md:p-14 flex flex-col gap-8 group">
               <span className="text-xs uppercase tracking-[0.3em] text-terracotta font-bold">{w.label}</span>
               <div>
                 <h2 className="text-3xl md:text-4xl font-serif text-charcoal mb-4 leading-tight">{w.headline}</h2>
@@ -84,39 +73,21 @@ const Services = () => (
               >
                 {w.cta} <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
               </Link>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
     </section>
 
     {/* CLOSING CTA */}
-    <section className="bg-cream py-12 px-6">
-      <div className="max-container">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.2 }}
-            viewport={{ once: true }}
-            className="aspect-3/4 rounded-[2.5rem] overflow-hidden shadow-xl"
-          >
-            <img src="/Jennie-41.jpg" alt="Jennie Wolff" className="w-full h-full object-cover object-top" />
-          </motion.div>
-          <motion.div
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-          >
-            <p className="text-2xl md:text-3xl font-serif italic text-sage mb-10 leading-relaxed">
-              Not sure where to start? Let's begin with a conversation.
-            </p>
-            <Link to="/contact" className="terracotta-button inline-flex items-center">
-              Connect <ArrowRight size={20} className="ml-2" />
-            </Link>
-          </motion.div>
-        </div>
+    <section className="bg-cream py-12 px-6 text-center">
+      <div className="max-container max-w-xl">
+        <p className="text-lg md:text-xl font-serif italic text-sage mb-8 leading-relaxed">
+          Not sure where to start? Let's begin with a conversation.
+        </p>
+        <Link to="/contact" className="terracotta-button inline-flex items-center justify-center">
+          Connect <ArrowRight size={20} className="ml-2" />
+        </Link>
       </div>
     </section>
   </div>
