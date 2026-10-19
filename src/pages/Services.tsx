@@ -80,7 +80,7 @@ const Services = () => (
     </section>
 
     {/* CLOSING CTA */}
-    <section className="bg-cream py-12 px-6 text-center">
+    <section className="bg-cream py-8 px-6 text-center">
       <div className="max-container max-w-xl">
         <p className="text-lg md:text-xl font-serif italic text-sage mb-8 leading-relaxed">
           Not sure where to start? Let's begin with a conversation.

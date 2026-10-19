@@ -3,11 +3,6 @@ import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1] as const } },
-};
-
 const TESTIMONIALS = [
   {
     quote: "Working with Jennie has been pivotal for our team. We appreciate her thoughtfulness and intentionality and leave every session feeling accomplished and proud. She has a true talent of connecting with individuals and helping others operate as their best selves.",
@@ -77,14 +72,7 @@ const Testimonials = () => (
     <section className="pt-0 pb-12 px-6">
       <div className="max-container space-y-4">
         {TESTIMONIALS.map((t, i) => (
-          <motion.div
-            key={i}
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            className="bg-linen border border-sage/10 rounded-[2rem] p-8 md:p-12"
-          >
+          <div key={i} className="bg-linen border border-sage/10 rounded-[2rem] p-8 md:p-12">
             <blockquote className="font-serif italic text-xl md:text-2xl text-charcoal leading-relaxed mb-6">
               "{t.quote}"
             </blockquote>
@@ -92,27 +80,19 @@ const Testimonials = () => (
               <p className="font-serif text-base text-charcoal">{t.name}</p>
               <p className="text-xs uppercase tracking-widest text-sage font-bold mt-1">{t.title}</p>
             </footer>
-          </motion.div>
+          </div>
         ))}
       </div>
     </section>
 
     <section className="bg-cream text-center py-12 px-6">
       <div className="max-container">
-        <motion.p
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="text-xl md:text-2xl font-serif italic text-sage mb-10 max-w-xl mx-auto"
-        >
+        <p className="text-xl md:text-2xl font-serif italic text-sage mb-10 max-w-xl mx-auto">
           Ready to write your own chapter?
-        </motion.p>
-        <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true }}>
-          <Link to="/contact" className="terracotta-button inline-flex items-center">
-            Connect <ArrowRight size={20} className="ml-2" />
-          </Link>
-        </motion.div>
+        </p>
+        <Link to="/contact" className="terracotta-button inline-flex items-center">
+          Connect <ArrowRight size={20} className="ml-2" />
+        </Link>
       </div>
     </section>
   </div>

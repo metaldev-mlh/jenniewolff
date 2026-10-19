@@ -60,7 +60,7 @@ const Hero = () => (
 
 /* ─────────────────── THE PROCESS ─────────────────── */
 const Intro = () => (
-  <section className="bg-linen py-10 md:py-14 px-6">
+  <section className="bg-linen py-10 md:py-14 px-6 md:px-16">
     <div className="max-container grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20 items-center">
       <div className="aspect-[3/4] bg-sage/10 rounded-[3rem] overflow-hidden">
         <img src="/Jennie-59.jpg" alt="Jennie Wolff" className="w-full h-full object-cover" />
@@ -99,7 +99,7 @@ const TESTIMONIAL_PREVIEWS = [
 ];
 
 const PhotoMosaic = () => (
-  <section className="bg-cream py-10 md:py-12 px-6 relative overflow-hidden">
+  <section className="bg-cream py-10 md:py-12 px-6 md:px-16 relative overflow-hidden">
     <div className="max-container">
       <div className="text-center mb-8">
         <span className="kicker">The impact.</span>
@@ -133,7 +133,7 @@ const services = [
 ];
 
 const WaysToWork = () => (
-  <section className="bg-sand py-10 md:py-14 px-6">
+  <section className="bg-sand py-10 md:py-14 px-6 md:px-16">
     <div className="max-container">
       <div className="text-center mb-8">
         <span className="kicker">The container.</span>

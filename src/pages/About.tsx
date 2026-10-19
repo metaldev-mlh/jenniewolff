@@ -3,18 +3,6 @@ import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const container = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.12 } },
-};
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1] as const },
-  },
-};
 
 const About = () => {
 
@@ -71,20 +59,14 @@ const About = () => {
             </div>
            <div className="relative">
              <div className="sticky top-24">
-               <motion.div
-                 initial={{ opacity: 0, scale: 0.95 }}
-                 whileInView={{ opacity: 1, scale: 1 }}
-                 transition={{ duration: 1.2 }}
-                 viewport={{ once: true }}
-                 className="aspect-[3/4] bg-sage/10 rounded-[3rem] overflow-hidden relative group"
-               >
+               <div className="aspect-[3/4] bg-sage/10 rounded-[3rem] overflow-hidden relative group">
                  <img
                    src="/Jennie-62.jpg"
                    alt="Jennie Wolff"
                    className="w-full h-full object-cover object-top transition-transform duration-1000 group-hover:scale-105"
                  />
                  <div className="absolute inset-0 bg-terracotta/5 mix-blend-overlay group-hover:opacity-0 transition-opacity" />
-               </motion.div>
+               </div>
              </div>
            </div>
          </div>
@@ -94,14 +76,7 @@ const About = () => {
        <section className="py-14 px-6 bg-charcoal text-cream">
          <div className="max-container max-w-3xl">
            <div className="flex justify-center md:justify-start mb-10">
-             <motion.span
-               initial={{ opacity: 0, y: 16 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
-               className="kicker text-cream!"
-             >
-               What I believe
-             </motion.span>
+             <span className="kicker text-cream!">What I believe</span>
            </div>
            <div className="space-y-6">
              {[
@@ -174,14 +149,10 @@ const About = () => {
        {/* 08 CTA */}
        <section className="py-14 px-6 bg-rose text-charcoal text-center">
          <div className="max-container">
-           <motion.div variants={container} initial="hidden" whileInView="show" viewport={{ once: true }}>
-             <motion.h2 variants={fadeUp} className="text-2xl md:text-3xl font-serif mb-8">If any of this resonates, I'd love to connect.</motion.h2>
-             <motion.div variants={fadeUp}>
-               <Link to="/contact" className="inline-flex items-center primary-button group">
-                 Request a Clarity Session <ArrowRight size={20} className="ml-2 transition-transform group-hover:translate-x-1" />
-               </Link>
-             </motion.div>
-           </motion.div>
+           <h2 className="text-2xl md:text-3xl font-serif mb-8">If any of this resonates, I'd love to connect.</h2>
+           <Link to="/contact" className="inline-flex items-center primary-button group">
+             Request a Clarity Session <ArrowRight size={20} className="ml-2 transition-transform group-hover:translate-x-1" />
+           </Link>
          </div>
        </section>
     </div>
