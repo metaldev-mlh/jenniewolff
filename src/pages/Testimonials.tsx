@@ -64,7 +64,7 @@ const Testimonials = () => (
           transition={{ duration: 1.2 }}
           className="aspect-[3/4] max-h-[320px] md:max-h-[420px] rounded-[2.5rem] overflow-hidden shadow-2xl mx-auto w-full max-w-[260px] md:max-w-none"
         >
-          <img src="/Jennie-3.png" alt="Jennie Wolff" className="w-full h-full object-cover object-top" />
+          <img src="/Jennie-3.png" alt="Jennie Wolff" className="w-full h-full object-cover object-center" />
         </motion.div>
       </div>
     </header>
