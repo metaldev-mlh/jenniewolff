@@ -26,7 +26,7 @@ const About = () => {
            <img src="/Jennie-28.jpg" alt="" aria-hidden className="w-full h-full object-cover object-center" />
            <div className="absolute inset-0 bg-gradient-to-l from-charcoal/80 via-charcoal/30 to-transparent" />
          </div>
-         <div className="max-container relative w-full flex justify-start md:justify-end pt-32 pb-16">
+         <div className="max-container px-6 md:px-16 relative w-full flex justify-start md:justify-end pt-32 pb-16">
            <motion.div
              initial={{ opacity: 0, y: 24 }}
              animate={{ opacity: 1, y: 0 }}
