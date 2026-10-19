@@ -26,7 +26,7 @@ const About = () => {
            <img src="/Jennie-28.jpg" alt="" aria-hidden className="w-full h-full object-cover object-center" />
            <div className="absolute inset-0 bg-gradient-to-l from-charcoal/80 via-charcoal/30 to-transparent" />
          </div>
-         <div className="max-container relative w-full flex justify-end pt-32 pb-16">
+         <div className="max-container relative w-full flex justify-start md:justify-end pt-32 pb-16">
            <motion.div
              initial={{ opacity: 0, y: 24 }}
              animate={{ opacity: 1, y: 0 }}
@@ -55,7 +55,7 @@ const About = () => {
 
        {/* 02 BIO */}
        <section className="py-14 px-6">
-         <div className="max-container grid grid-cols-1 md:grid-cols-2 gap-24">
+         <div className="max-container grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24">
             <div className="space-y-6 text-base md:text-lg text-charcoal leading-relaxed">
               <p className="italic text-sage">A little about me.</p>
               <p>I work with people to bring big ideas to life.</p>
@@ -93,14 +93,16 @@ const About = () => {
        {/* 05 WHAT I BELIEVE */}
        <section className="py-14 px-6 bg-charcoal text-cream">
          <div className="max-container max-w-3xl">
-           <motion.span
-             initial={{ opacity: 0, y: 16 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             viewport={{ once: true }}
-             className="kicker text-cream! mb-10 block"
-           >
-             What I believe
-           </motion.span>
+           <div className="flex justify-center md:justify-start mb-10">
+             <motion.span
+               initial={{ opacity: 0, y: 16 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               viewport={{ once: true }}
+               className="kicker text-cream!"
+             >
+               What I believe
+             </motion.span>
+           </div>
            <div className="space-y-6">
              {[
                "Growth rarely follows a straight line. Small, consistent actions create meaningful change over time.",

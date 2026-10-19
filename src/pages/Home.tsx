@@ -65,7 +65,7 @@ const Intro = () => (
       <div className="aspect-[3/4] bg-sage/10 rounded-[3rem] overflow-hidden">
         <img src="/Jennie-59.jpg" alt="Jennie Wolff" className="w-full h-full object-cover" />
       </div>
-      <div>
+      <div className="flex flex-col items-center md:items-start text-center md:text-left">
         <span className="kicker">The process.</span>
         <p className="text-base md:text-lg text-charcoal leading-relaxed mt-8">
           Whether you have a big idea, a growing business, or you're navigating a transition, I create space for you to slow down, reconnect with what matters most, and get clear on your vision. From there, we move into action.
