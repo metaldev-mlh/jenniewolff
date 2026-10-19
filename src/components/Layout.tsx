@@ -21,9 +21,19 @@ export const Navbar = () => {
 
   return (
     <nav className="bg-cream/90 backdrop-blur-md border-b border-steel/10 relative">
-      <div className="max-container px-8 md:px-16 flex items-center justify-center h-24">
-        {/* Logo + Nav + CTA semua di tengah */}
-        <div className="hidden md:flex items-center gap-8">
+      <div className="max-container px-8 md:px-16 flex items-center h-24">
+        {/* Mobile: logo kiri, hamburger kanan */}
+        <div className="flex md:hidden items-center justify-between w-full">
+          <Link to="/" className="flex-shrink-0">
+            <img src="/LogoJW.png" alt="Jennie Wolff" className="h-16 w-auto object-contain" />
+          </Link>
+          <button className="p-2 text-charcoal/70" onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
+
+        {/* Desktop: Logo + Nav + CTA semua di tengah */}
+        <div className="hidden md:flex items-center gap-8 w-full justify-center">
           <Link to="/" className="flex-shrink-0">
             <img src="/LogoJW.png" alt="Jennie Wolff" className="h-20 w-auto object-contain" />
           </Link>
@@ -44,13 +54,6 @@ export const Navbar = () => {
           <Link to="/contact" className="terracotta-button text-xs uppercase tracking-widest">
             Let's Connect
           </Link>
-        </div>
-
-        {/* Mobile Toggle */}
-        <div className="md:hidden ml-auto">
-          <button className="p-2 text-charcoal/70" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
         </div>
       </div>
 

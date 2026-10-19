@@ -44,7 +44,7 @@ const TESTIMONIALS = [
 const Testimonials = () => (
   <div className="bg-cream overflow-x-clip">
     <header className="bg-linen px-6 py-0">
-      <div className="max-container grid grid-cols-1 md:grid-cols-2 gap-16 items-center min-h-[55vh] pt-20 pb-8 md:pl-36">
+      <div className="max-container grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center min-h-[55vh] pt-20 pb-8 md:pl-36">
         <div>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -67,7 +67,7 @@ const Testimonials = () => (
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2 }}
-          className="hidden md:block aspect-[3/4] max-h-[420px] rounded-[2.5rem] overflow-hidden shadow-2xl"
+          className="aspect-[3/4] max-h-[320px] md:max-h-[420px] rounded-[2.5rem] overflow-hidden shadow-2xl mx-auto w-full max-w-[260px] md:max-w-none"
         >
           <img src="/Jennie-3.png" alt="Jennie Wolff" className="w-full h-full object-cover object-top" />
         </motion.div>
